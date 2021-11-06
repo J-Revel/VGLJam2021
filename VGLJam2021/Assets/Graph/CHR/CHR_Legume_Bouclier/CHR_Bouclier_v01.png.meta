@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b0000f5dfbeee244adc4489c84530a9
+guid: eeb91d53b525dd84c9ebc320914b81cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -87,9 +87,7 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 36b46730580049e48b4e0060225240c7, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
