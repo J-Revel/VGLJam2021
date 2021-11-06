@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6210370069991820898}
   - component: {fileID: 8199750786088204968}
   - component: {fileID: 6978044955587962391}
-  - component: {fileID: 1681889592403792296}
   m_Layer: 0
   m_Name: BG_Bumper_Triangle_01
   m_TagString: Untagged
@@ -93,7 +92,7 @@ Animator:
   m_GameObject: {fileID: 7695422051312196477}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2d808bca9daef4e4e84f182ff5e5676d, type: 2}
+  m_Controller: {fileID: 9100000, guid: d1fdbd9adf9583d4ba9af4d2d52324c8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -102,20 +101,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &1681889592403792296
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7695422051312196477}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: bc1336944c56a9d428c01326b7f5965c, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
