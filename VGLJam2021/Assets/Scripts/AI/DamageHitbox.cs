@@ -11,10 +11,13 @@ public class DamageHitbox : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        print(collision);
+        PlayerController player = collision.collider.GetComponent<PlayerController>();
+        if(player != null)
+        {
+            player.GetComponent<Health>().Damage(1, collision.GetContact(0).normal);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         
