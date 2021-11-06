@@ -199,6 +199,8 @@ MonoBehaviour:
   targetDistanceRatio: 0.5
   maxTargetDistance: 5
   animatedSprite: {fileID: 3062698656785438517}
+  dashFXPrefab: {fileID: 4244755575905797275, guid: 00d26e649bfd6354c869e48fd29a6968, type: 3}
+  dashFXCount: 10
 --- !u!50 &3062698656785438514
 Rigidbody2D:
   serializedVersion: 4
