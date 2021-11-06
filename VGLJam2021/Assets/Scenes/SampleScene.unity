@@ -541,7 +541,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100052100}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.6, y: 19, z: -6.87}
+  m_LocalPosition: {x: 4.13, y: 13, z: -30.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 991182468}
@@ -556,13 +556,13 @@ Light:
   m_GameObject: {fileID: 100052100}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 2
+  m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.47058824, g: 0.79607844, b: 0.827451, a: 1}
-  m_Intensity: 100
-  m_Range: 33.38
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 1500
+  m_Range: 38.2
+  m_SpotAngle: 77.11194
+  m_InnerSpotAngle: 39.135452
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1271,8 +1271,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492201139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.51, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 1.98, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 607564923}
   m_RootOrder: 0
@@ -1317,7 +1317,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: db40326a382f88e4980579a4fdcc8623, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1888,7 +1888,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.26486292, g: 0.6037736, b: 0.29829106, a: 1}
-  m_Intensity: 80
+  m_Intensity: 120
   m_Range: 1000
   m_SpotAngle: 79.83005
   m_InnerSpotAngle: 10.079243
@@ -3462,7 +3462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 675375695, guid: 3b0f5bd061d869c4aa96ccd6766fe022, type: 3}
       propertyPath: m_Intensity
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 675375695, guid: 3b0f5bd061d869c4aa96ccd6766fe022, type: 3}
       propertyPath: m_Lightmapping
@@ -3570,7 +3570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1479450047945226146, guid: 3b0f5bd061d869c4aa96ccd6766fe022, type: 3}
       propertyPath: m_Intensity
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1479450047945226146, guid: 3b0f5bd061d869c4aa96ccd6766fe022, type: 3}
       propertyPath: m_SpotAngle
@@ -4632,6 +4632,10 @@ PrefabInstance:
     - target: {fileID: 302639527545849269, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
       propertyPath: m_Name
       value: Big Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848089804342387836, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
+      propertyPath: m_Color.a
+      value: 0.23529412
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
