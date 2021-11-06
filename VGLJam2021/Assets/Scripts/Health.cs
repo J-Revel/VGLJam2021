@@ -6,10 +6,16 @@ public class Health : MonoBehaviour
 {
     public int health = 1;
 
+    public System.Action hurtDelegate;
+
     public void Damage(int damage)
     {
         health -=  damage;
         if(health <= 0)
             Destroy(gameObject);
+        else
+        {
+            hurtDelegate?.Invoke();
+        }
     }
 }
