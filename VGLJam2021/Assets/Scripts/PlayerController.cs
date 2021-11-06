@@ -11,6 +11,16 @@ public class PlayerController : MonoBehaviour
     public Transform cameraTarget;
     public Transform weaponTransform;
 
+    public float targetDistanceRatio = 0.5f;
+    public float maxTargetDistance = 5;
+
+    public static PlayerController instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+    
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -38,5 +48,8 @@ public class PlayerController : MonoBehaviour
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         float angle = Vector2.SignedAngle(Vector3.right, targetPosition-transform.position);
         weaponTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        float targetDistance = Vector3.Distance(targetPosition, transform.position);
+        Vector3 targetDirection = (targetPosition-transform.position).normalized;
+        cameraTarget.transform.position = transform.position + targetDirection * Mathf.Min(maxTargetDistance, targetDistance * targetDistanceRatio);
     }
 }

@@ -29,7 +29,8 @@ public class Weapon : MonoBehaviour
                 if(Input.GetButtonDown("Shoot") && shootTime < 0)
                 {
                     shootTime = shootInterval;
-                    Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(Random.Range(-precision, precision), Vector3.forward));
+                    Shoot();
+
                 }
                 break;
 
@@ -37,11 +38,35 @@ public class Weapon : MonoBehaviour
                 if(Input.GetButton("Shoot") && shootTime < 0)
                 {
                     shootTime = shootInterval;
-                    Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(Random.Range(-precision, precision), Vector3.forward));
+                    Shoot();
                 }
                 break;
 
         }
         shootTime -= Time.deltaTime;
+    }
+
+    private void Shoot()
+    {
+        Transform projectile = Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward));
+        projectile.gameObject.AddComponent<TeamDataHolder>().team = Team.Player;
+    }
+
+     public float RandomGaussian(float sigma, float mu)
+    {
+        float x1, x2, w, y1; //, y2;
+
+        do
+        {
+            x1 = 2f * (float)Random.value - 1f;
+            x2 = 2f * (float)Random.value - 1f;
+            w = x1 * x1 + x2 * x2;
+        } while (w >= 1f);
+
+        w = Mathf.Sqrt((-2f * Mathf.Log(w)) / w);
+        y1 = x1 * w;
+        // y2 = x2 * w;
+
+        return (y1 * sigma) + mu;
     }
 }
