@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 302639527545849266}
   - component: {fileID: 302639527545849167}
   - component: {fileID: 302639527545849166}
+  - component: {fileID: 2007479846958661898}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -164,3 +165,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
   movementForce: 10
+--- !u!114 &2007479846958661898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302639527545849269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69a79d9c06c9e1439f92db13ad2e3db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  targetColor: {r: 1, g: 0, b: 0, a: 1}
+  duration: 0.4
+  minTargetAngle: 2
+  maxTargetAngle: 20
+  minTargetScale: 0.7
+  maxTargetScale: 0.9
