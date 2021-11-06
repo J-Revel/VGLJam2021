@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Projectile Ennemi Anims
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Tir
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: b5589a8d16f72b743933eeb49c008d5e, type: 3}
+      - {fileID: 21300000, guid: d780e1f766a4dfe4ba6853ac28e026df, type: 3}
+      - {fileID: 21300000, guid: e049e20e74a1fab44a2fda2fe8b116c5, type: 3}
+      - {fileID: 21300000, guid: c651ee8894bab764481edb3fc5f6aed0, type: 3}
+      - {fileID: 21300000, guid: 2ed8ae6d4659d3e49afee1e0c38538f3, type: 3}
+      - {fileID: 21300000, guid: e8099454925eb3641ae7e56342c15730, type: 3}
+      - {fileID: 21300000, guid: 6591f30d9b0057243bf764ee9fc06902, type: 3}
+      - {fileID: 21300000, guid: fd909e83a3b186d438160d1c887a8bd2, type: 3}
+      actionPoints: []
+      framePerSecond: 8
+      loop: 1
+  actionPointNames: []
