@@ -1409,10 +1409,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 2848089804342387836, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
-      propertyPath: m_Color.a
-      value: 0.23529412
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
 --- !u!1 &1898246027

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56aea49d2da059747a6f9886e68ec7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splatterPrefab: {fileID: 3929593981600889230, guid: e5e942d7618df6741a77c2ef0c45b467, type: 3}
+  splatterPrefab: {fileID: 3929593981600889230, guid: 70b15c3057b3b96448d45850e44baae4, type: 3}
   minScale: 1.5
   maxScale: 2
 --- !u!1 &361514530182344981
