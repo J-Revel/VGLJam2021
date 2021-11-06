@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 4664036524983652435, guid: f98ac2476baa0464db41d98524f1bdd9, type: 3}
+  spawnPoint: {fileID: 8957130400517038476}
   shootType: 0
   shootInterval: 0.3
   precision: 10
