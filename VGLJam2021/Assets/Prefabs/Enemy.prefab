@@ -212,8 +212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   splatterPrefab: {fileID: 3929593981600889230, guid: 996907497782f124e89483703c073fdd, type: 3}
-  minScale: 1
-  maxScale: 1.5
+  minScale: 1.7
+  maxScale: 2.3
 --- !u!1 &3764319039581712041
 GameObject:
   m_ObjectHideFlags: 0
