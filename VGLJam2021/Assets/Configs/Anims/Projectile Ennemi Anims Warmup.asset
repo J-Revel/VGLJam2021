@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Projectile Ennemi Anims Warmup
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Warmup
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: abb9619d1dcc21f4884ab7dfd40075bb, type: 3}
+      - {fileID: 21300000, guid: c49bb02b7671091408da2ebd8b50e193, type: 3}
+      - {fileID: 21300000, guid: cd7f1da3933d3ed4696e958f8b4a4785, type: 3}
+      - {fileID: 21300000, guid: fb3521c18e871794eb6ea82bc5794aef, type: 3}
+      - {fileID: 21300000, guid: 9a246774915fdfd45816d336a6a4943a, type: 3}
+      - {fileID: 21300000, guid: 087657824557e6e4a84fd47a2febd5ab, type: 3}
+      - {fileID: 21300000, guid: 4b6b4c2e804ea5b43ae17289afaf8072, type: 3}
+      - {fileID: 21300000, guid: 51ec8b0682145b04da9756428c9508f4, type: 3}
+      - {fileID: 21300000, guid: 8941abc7e315e7c409106641c9934756, type: 3}
+      actionPoints: []
+      framePerSecond: 8
+      loop: 1
+  actionPointNames: []
