@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
         Camera camera = Camera.main;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         Vector3 targetPosition = ray.GetPoint(-ray.origin.z / Vector3.Dot(ray.direction, new Vector3(0, 0, 1)));
-        print(targetPosition);
         float angle = Vector2.SignedAngle(Vector3.right, targetPosition-transform.position);
         weaponTransform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         float targetDistance = Vector3.Distance(targetPosition, transform.position);
