@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     public float shootInterval = 0.3f;
     private float shootTime = 0;
     public float precision = 10;
+    public Team team;
 
     void Start()
     {
@@ -46,10 +47,10 @@ public class Weapon : MonoBehaviour
         shootTime -= Time.deltaTime;
     }
 
-    private void Shoot()
+    public void Shoot()
     {
         Transform projectile = Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward));
-        projectile.gameObject.AddComponent<TeamDataHolder>().team = Team.Player;
+        projectile.gameObject.AddComponent<TeamDataHolder>().team = team;
     }
 
      public float RandomGaussian(float sigma, float mu)
