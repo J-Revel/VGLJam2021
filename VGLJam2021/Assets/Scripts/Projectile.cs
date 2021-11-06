@@ -12,6 +12,7 @@ public class Projectile : MonoBehaviour
 {
     public float speed;
     public int damage = 1;
+    public float recoil = 10;
     public TeamDataHolder teamDataHolder;
     
     void Start()
@@ -24,6 +25,11 @@ public class Projectile : MonoBehaviour
     {
         Health health = collider.GetComponent<Health>();
         TeamDataHolder otherTeamDataHolder = collider.GetComponent<TeamDataHolder>();
+        Rigidbody2D otherRigidbody = collider.GetComponentInParent<Rigidbody2D>();
+        if(otherRigidbody != null)
+        {
+            otherRigidbody.AddForce(recoil * transform.forward, ForceMode2D.Impulse);
+        }
         if(otherTeamDataHolder == null)
         {
             Destroy(gameObject);
