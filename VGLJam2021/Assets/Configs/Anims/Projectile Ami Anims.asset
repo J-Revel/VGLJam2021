@@ -16,10 +16,10 @@ MonoBehaviour:
   - name: Tir
     spriteAnim:
       sprites:
-      - {fileID: 21300000, guid: 0f22964e3d9187e4a9bf2c40e259e81c, type: 3}
-      - {fileID: 21300000, guid: d650cbdab752ae94087df23a141f3f54, type: 3}
-      - {fileID: 21300000, guid: d8434cee4f1f4e9439d37fddf2ff3fd0, type: 3}
+      - {fileID: 21300000, guid: 3e3cde68c198f3941b63cd1baf9669a7, type: 3}
+      - {fileID: 21300000, guid: 03953059dcb568e41a2fab3a804eb887, type: 3}
+      - {fileID: 21300000, guid: 3039ac7ef690c8340a589a91f2ffa421, type: 3}
       actionPoints: []
-      framePerSecond: 5
+      framePerSecond: 10
       loop: 1
   actionPointNames: []
