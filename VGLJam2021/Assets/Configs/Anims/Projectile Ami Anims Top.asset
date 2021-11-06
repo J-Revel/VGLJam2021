@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
-  m_Name: Projectile Ami Anims
+  m_Name: Projectile Ami Anims Top
   m_EditorClassIdentifier: 
   spriteAnims:
   - name: Tir
     spriteAnim:
       sprites:
-      - {fileID: 21300000, guid: 3e3cde68c198f3941b63cd1baf9669a7, type: 3}
-      - {fileID: 21300000, guid: 03953059dcb568e41a2fab3a804eb887, type: 3}
-      - {fileID: 21300000, guid: 3039ac7ef690c8340a589a91f2ffa421, type: 3}
+      - {fileID: 21300000, guid: 4a0ae7aeb7c9d7a478dec33b4fe47985, type: 3}
+      - {fileID: 21300000, guid: 739868108929b1f4e958f17fccb805e0, type: 3}
+      - {fileID: 21300000, guid: 31d6d1dd59add034486051d887b253d9, type: 3}
       actionPoints: []
       framePerSecond: 10
       loop: 1
