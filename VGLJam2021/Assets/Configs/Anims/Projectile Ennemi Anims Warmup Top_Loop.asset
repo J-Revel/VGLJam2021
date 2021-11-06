@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Projectile Ennemi Anims Warmup Top_Loop
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Warmup
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 648560129ed8be040a677ebfbeba929e, type: 3}
+      - {fileID: 21300000, guid: 9553e0bd10036fb42a61b6457993b798, type: 3}
+      - {fileID: 21300000, guid: 317300a753c330f4a9c5152354eb230f, type: 3}
+      - {fileID: 21300000, guid: 7254fc9b2ef1e904c8422b70d8b8c0f5, type: 3}
+      - {fileID: 21300000, guid: 71195609a56a5e14d87f418ecee97052, type: 3}
+      - {fileID: 21300000, guid: d95cbdd59aa6d744eb09747df469a8a3, type: 3}
+      actionPoints: []
+      framePerSecond: 8
+      loop: 1
+  actionPointNames: []
