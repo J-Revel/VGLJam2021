@@ -1959,6 +1959,10 @@ MonoBehaviour:
     - {fileID: 302639527545849267, guid: 9711b2b94e90b5d43bbe0013392925cc, type: 3}
     - {fileID: 302639527545849267, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
     - {fileID: 302639527545849267, guid: 9711b2b94e90b5d43bbe0013392925cc, type: 3}
+  - enemies:
+    - {fileID: 302639527545849267, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
+    - {fileID: 302639527545849267, guid: eb8187e2e4af30e4998aea5a0e3250ec, type: 3}
+    - {fileID: 302639527545849267, guid: cbe1f56644c0270409c07bf087a6a197, type: 3}
   spawnPoints:
   - {fileID: 1372300615}
   - {fileID: 807834836}
