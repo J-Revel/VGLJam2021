@@ -21,12 +21,16 @@ public class HurtScreenShake : MonoBehaviour
         if(playing)
         {
             time += Time.deltaTime;
-            if(time > duration)
-                playing = false;
             float intensityRatio = 1 - Mathf.Abs(time / duration * 2 - 1);
             ScreenShake.instance.rotationIntensity = intensityRatio * targetAngle;
             ScreenShake.instance.movementIntensity = new Vector2(intensityRatio * targetDisplacement, intensityRatio * targetDisplacement);
 
+            if(time > duration)
+            {
+                playing = false;
+                ScreenShake.instance.rotationIntensity = 0;
+                ScreenShake.instance.movementIntensity = Vector2.zero;
+            }
         }
     }
 
