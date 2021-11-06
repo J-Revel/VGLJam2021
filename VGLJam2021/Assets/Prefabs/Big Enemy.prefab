@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 302639527545849266}
   - component: {fileID: 302639527545849167}
   - component: {fileID: 7145784136982575586}
+  - component: {fileID: 1405517225}
   m_Layer: 0
   m_Name: Big Enemy
   m_TagString: Untagged
@@ -120,6 +121,21 @@ MonoBehaviour:
   shootTime: 0
   angularAcceleration: 10
   weapon: {fileID: 3133071016708900798}
+--- !u!114 &1405517225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302639527545849269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56aea49d2da059747a6f9886e68ec7bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splatterPrefab: {fileID: 3929593981600889230, guid: 70b15c3057b3b96448d45850e44baae4, type: 3}
+  minScale: 1.5
+  maxScale: 2
 --- !u!1 &361514530182344981
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +320,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 50b3b7d0eb93c0546aeba4ba3a6eeae1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.23529412}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
