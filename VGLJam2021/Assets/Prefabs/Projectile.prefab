@@ -306,9 +306,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e93bae3ab706849922fc86c1904568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 30
   damage: 1
-  recoil: 10000
+  recoil: 10
   teamDataHolder: {fileID: 0}
 --- !u!61 &6082582495806415582
 BoxCollider2D:
@@ -5385,7 +5385,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1

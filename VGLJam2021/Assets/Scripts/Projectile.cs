@@ -26,10 +26,7 @@ public class Projectile : MonoBehaviour
         Health health = collider.GetComponent<Health>();
         TeamDataHolder otherTeamDataHolder = collider.GetComponent<TeamDataHolder>();
         Rigidbody2D otherRigidbody = collider.GetComponentInParent<Rigidbody2D>();
-        if(otherRigidbody != null)
-        {
-            otherRigidbody.AddForce(recoil * transform.forward, ForceMode2D.Impulse);
-        }
+        
         if(otherTeamDataHolder == null)
         {
             Destroy(gameObject);
@@ -38,7 +35,11 @@ public class Projectile : MonoBehaviour
         {
             if(health != null)
             {
-                health.Damage(damage);
+                health.Damage(damage, transform.right);
+            }
+            if(otherRigidbody != null)
+            {
+                otherRigidbody.AddForce(recoil * transform.right, ForceMode2D.Impulse);
             }
             Destroy(gameObject);
         }

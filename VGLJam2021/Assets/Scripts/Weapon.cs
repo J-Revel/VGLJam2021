@@ -11,6 +11,7 @@ public enum ShootType
 public class Weapon : MonoBehaviour
 {
     public Transform projectilePrefab;
+    public Transform spawnPoint;
     public ShootType shootType;
     public float shootInterval = 0.3f;
     private float shootTime = 0;
@@ -49,7 +50,7 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        Transform projectile = Instantiate(projectilePrefab, transform.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward));
+        Transform projectile = Instantiate(projectilePrefab, spawnPoint.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward));
         projectile.gameObject.AddComponent<TeamDataHolder>().team = team;
     }
 
