@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float maxTargetDistance = 5;
 
     public static PlayerController instance;
+    public AnimatedSprite animatedSprite;
 
     void Awake()
     {
@@ -34,8 +35,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
+        {
+            animatedSprite.SelectAnim("Walk");
+        }
+        else animatedSprite.SelectAnim("Idle");
         if(Input.GetButtonDown("Dash"))
         {
+            
             Vector2 inputDirection = ((Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")).normalized);
             RaycastHit2D hit = Physics2D.Raycast(rigidbody.position, inputDirection, dashDistance, raycastLayer);
             if(hit && hit.distance > 0)
