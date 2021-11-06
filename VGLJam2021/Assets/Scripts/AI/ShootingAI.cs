@@ -12,6 +12,10 @@ public class ShootingAI : MonoBehaviour
     public float shootInterval = 2;
     public float shootTime = 0;
     public float angularAcceleration = 10;
+    public int burstCount = 5;
+    private int burstIndex = 0;
+    private float reloadDuration = 2;
+    private float reloadTime = 0;
 
     public Weapon weapon;
 
@@ -33,11 +37,25 @@ public class ShootingAI : MonoBehaviour
             rigidbody.AddForce(-escapeForce * targetDirection.normalized);
         else
         {
-            shootTime += Time.deltaTime;
-            if(shootTime > shootInterval)
+            if(burstIndex >= burstCount)
             {
-                weapon.Shoot();
-                shootTime -= shootInterval;
+                reloadTime += Time.deltaTime;
+                if(reloadTime > reloadDuration)
+                {
+                    reloadTime = 0;
+                    burstIndex = 0;
+
+                }
+            }
+            else
+            {
+                shootTime += Time.deltaTime;
+                if(shootTime > shootInterval)
+                {
+                    weapon.Shoot();
+                    burstIndex++;
+                    shootTime -= shootInterval;
+                }
             }
         }
         rigidbody.AddTorque(Mathf.Sign(Vector2.SignedAngle(transform.right, targetDirection)) * angularAcceleration);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7479654701643799711}
   - component: {fileID: 3544895200782720763}
   - component: {fileID: 5184991444034244026}
+  - component: {fileID: 5569942425574406544}
   m_Layer: 0
   m_Name: FX_explosion_pois
   m_TagString: Untagged
@@ -102,3 +103,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5569942425574406544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3070537562158367665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751f36ac11b8e2d4ab8ddb463600e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ca5955653626107438e147206df931aa, type: 3}
+  playOnStart: 1

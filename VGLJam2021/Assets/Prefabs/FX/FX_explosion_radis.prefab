@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1386285802580522383}
   - component: {fileID: 1386285802580522368}
   - component: {fileID: 1386285802580522369}
+  - component: {fileID: 1968015154371275325}
   m_Layer: 0
   m_Name: FX_explosion_radis
   m_TagString: Untagged
@@ -102,3 +103,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1968015154371275325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386285802580522370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751f36ac11b8e2d4ab8ddb463600e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 186ce63caa742bf45aa837f6dd04c05e, type: 3}
+  playOnStart: 1

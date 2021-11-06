@@ -117,7 +117,7 @@ MonoBehaviour:
   escapeForce: 10
   shootRange: 15
   escapeRange: 10
-  shootInterval: 2
+  shootInterval: 0.1
   shootTime: 0
   angularAcceleration: 10
   weapon: {fileID: 3133071016708900798}
