@@ -1957,6 +1957,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3062698656785438519, guid: 0e686b6f1ffea724290e2178b5850869, type: 3}
+      propertyPath: dashFXCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3062698656785438519, guid: 0e686b6f1ffea724290e2178b5850869, type: 3}
+      propertyPath: dashFXPrefab
+      value: 
+      objectReference: {fileID: 2059182838642694921, guid: 00d26e649bfd6354c869e48fd29a6968, type: 3}
     - target: {fileID: 3062698656785438540, guid: 0e686b6f1ffea724290e2178b5850869, type: 3}
       propertyPath: m_Name
       value: Player
