@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166c7e2c5c373d44a95a1d799e74bb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 2
 --- !u!50 &302639527545849265
 Rigidbody2D:
   serializedVersion: 4
@@ -211,7 +211,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56aea49d2da059747a6f9886e68ec7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splatterPrefab: {fileID: 3929593981600889230, guid: 70556a36489eaaa47a7914c87d89ee68, type: 3}
+  splatterPrefab: {fileID: 3929593981600889230, guid: 996907497782f124e89483703c073fdd, type: 3}
+  minScale: 1.7
+  maxScale: 2.3
 --- !u!1 &3764319039581712041
 GameObject:
   m_ObjectHideFlags: 0

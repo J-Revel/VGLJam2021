@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
 
     public static PlayerController instance;
     public AnimatedSprite animatedSprite;
+    public SpriteRenderer dashFXPrefab;
+    public int dashFXCount = 5;
 
     void Awake()
     {
@@ -45,12 +47,18 @@ public class PlayerController : MonoBehaviour
             
             Vector2 inputDirection = ((Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")).normalized);
             RaycastHit2D hit = Physics2D.Raycast(rigidbody.position, inputDirection, dashDistance, raycastLayer);
+            Vector2 dashDirection = Vector3.zero;
             if(hit && hit.distance > 0)
             {
-                rigidbody.MovePosition(rigidbody.position + inputDirection * hit.distance);
+                dashDirection =  inputDirection * hit.distance;
             }
             else
-                rigidbody.MovePosition(rigidbody.position + inputDirection * dashDistance);
+                dashDirection = inputDirection * dashDistance;
+            rigidbody.MovePosition(rigidbody.position + dashDirection);
+            for(int i=0; i<dashFXCount; i++)
+            {
+                Instantiate(dashFXPrefab, transform.position + new Vector3(dashDirection.x, dashDirection.y, 0) * i / dashFXCount, Quaternion.identity).flipX = rigidbody.velocity.x < 0;
+            }
         }
         Camera camera = Camera.main;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
