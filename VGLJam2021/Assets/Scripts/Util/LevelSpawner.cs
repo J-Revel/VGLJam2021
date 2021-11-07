@@ -19,6 +19,11 @@ public class LevelSpawner : MonoBehaviour
         levelInstance = Instantiate(levelPrefab);
     }
 
+    public void StopLevel()
+    {
+        Destroy(levelInstance);
+    }
+
     public void StartLevel()
     {
         levelInstance = Instantiate(levelPrefab);
@@ -26,6 +31,5 @@ public class LevelSpawner : MonoBehaviour
 
     public void Start()
     {
-        StartLevel();
     }
 }

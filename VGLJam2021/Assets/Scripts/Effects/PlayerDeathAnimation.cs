@@ -12,7 +12,7 @@ public class PlayerDeathAnimation : MonoBehaviour
     public float zoomTargetDistance = 5;
     public CameraBehaviour cameraBehaviour;
     private Vector3 cameraStartPos;
-    public Transform gameoverMenuPrefab;
+    public GameObject gameoverMenuPrefab;
     
     void Start()
     {

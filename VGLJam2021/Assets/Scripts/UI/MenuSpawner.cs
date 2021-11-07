@@ -6,15 +6,21 @@ public class MenuSpawner : MonoBehaviour
 {
     public static MenuSpawner instance;
     private GameObject currentMenu;
+    public GameObject startMenu;
 
     private void Awake()
     {
         instance = this;
     }
 
-    public void SpawnMenu(Transform menu)
+    private void Start()
     {
-        currentMenu = Instantiate(menu, transform).gameObject;
+        SpawnMenu(startMenu);
+    }
+
+    public void SpawnMenu(GameObject menu)
+    {
+        currentMenu = Instantiate(menu, transform);
     }
 
     public void CloseMenu()
