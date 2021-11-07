@@ -948,6 +948,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1081761918820b94d8352cab2ec69719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easyWaves:
+  - enemies:
+    - {fileID: 7375797522896152029, guid: 31eb6deefacfc6d44b1711190f6789bf, type: 3}
+  mediumWaves:
+  - enemies:
+    - {fileID: 6472804431903652296, guid: 791eb911f10c6f74ca89cbea8cafb6bd, type: 3}
+  hardWaves: []
+  easyWaveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0083351135
+      value: 0.99765015
+      inSlope: -0.5264595
+      outSlope: -0.5264595
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.49870878
+      value: 0.73071206
+      inSlope: -0.7994887
+      outSlope: -0.7994887
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.2686331
+      outWeight: 0.3932336
+    - serializedVersion: 3
+      time: 1
+      value: 0.0047187805
+      inSlope: -2.6414728
+      outSlope: -2.6414728
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09974244
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  mediumWaveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hardWaveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0028381348
+      value: -0.0013427734
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.33782074
+      value: -0.005286862
+      inSlope: 0.05987718
+      outSlope: 0.05987718
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.16212925
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6607894
+      value: 0.14841479
+      inSlope: 0.6804865
+      outSlope: 0.6804865
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.17717849
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 6.3342137
+      outSlope: 6.3342137
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04274488
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   waves:
   - enemies:
     - {fileID: 7375797522896152029, guid: 31eb6deefacfc6d44b1711190f6789bf, type: 3}
@@ -978,7 +1084,7 @@ MonoBehaviour:
   - {fileID: 641388055}
   - {fileID: 500811342}
   - {fileID: 1097829247}
-  spawnDelay: 2
+  spawnDelay: 5
   spawnTime: 0
   spawnParent: {fileID: 3341880865730028042}
 --- !u!1 &4936101908272649733
