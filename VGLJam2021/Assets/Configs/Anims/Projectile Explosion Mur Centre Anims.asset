@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Projectile Explosion Mur Centre Anims
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Tir
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: ee9fccb27d7111240a632bfec17a8a51, type: 3}
+      - {fileID: 21300000, guid: 5636bdb96f0e5954286cab205757540f, type: 3}
+      - {fileID: 21300000, guid: b9fe5d4ceb1920e4cb961f027166a7aa, type: 3}
+      - {fileID: 21300000, guid: d17c038e4bc4fd34aabb66508c5f1982, type: 3}
+      - {fileID: 21300000, guid: 57cc4881b3edaea499f8cf95f52c7642, type: 3}
+      - {fileID: 21300000, guid: 03c0babff2f6c854ab46aaa3dc3761e5, type: 3}
+      - {fileID: 21300000, guid: 0ae926afd34fac94d94f99122cc695c6, type: 3}
+      - {fileID: 21300000, guid: 57778984817c45249aea0691152ee5f3, type: 3}
+      - {fileID: 21300000, guid: 98a55b10c3711ae47be92d4eb6627f63, type: 3}
+      - {fileID: 21300000, guid: e1e7082f22975c140a27a486b0dbf696, type: 3}
+      - {fileID: 21300000, guid: f39e429025f6c5244b1ed74815e126d7, type: 3}
+      - {fileID: 21300000, guid: f58daa150582ca44aac4674aefafc6a3, type: 3}
+      - {fileID: 21300000, guid: 3e0f05b2466cfdc47a62247bf6a5cb03, type: 3}
+      - {fileID: 21300000, guid: 68fd84371d1114e4294471a7d4bdc834, type: 3}
+      actionPoints: []
+      framePerSecond: 24
+      loop: 1
+  actionPointNames: []
