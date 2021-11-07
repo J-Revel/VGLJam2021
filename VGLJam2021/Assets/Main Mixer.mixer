@@ -20,7 +20,7 @@ AudioMixerGroupController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SFX
+  m_Name: SFX Mort Legumes
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 4ba364bca56aef442adb33df3d04e8ac
   m_Children: []
@@ -33,6 +33,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-2097952775602693232
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: d7523b13eaedeb149a32ecc23ed6e161
+  m_EffectName: Attenuation
+  m_MixLevel: e6f48f5a8d9ae5d4cb519096c996ee03
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -54,6 +68,7 @@ AudioMixerController:
     - 1776bf338ac868d4c8f495c60bb21521
     - 4ba364bca56aef442adb33df3d04e8ac
     - 8dbb5daab5a888c40b77dcd21ddc2767
+    - 9066340d5c6f39b47a12e441822bdbf6
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -67,6 +82,7 @@ AudioMixerGroupController:
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 1776bf338ac868d4c8f495c60bb21521
   m_Children:
+  - {fileID: 6249746280213148034}
   - {fileID: 6852973562339249146}
   - {fileID: -3192041504932525354}
   m_Volume: c60ff6b6d9ea70041b73ed7527028242
@@ -101,7 +117,10 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 45fc8a926ee39c648aa6585148f1fe3f
-  m_FloatValues: {}
+  m_FloatValues:
+    30fd9256399b5da4e95a2d29255dfc50: -16.035946
+    25c2374a929007e438f894f1849fb3d6: -0.54210335
+    d13cd2ea7a98c434cba8eba0f0faf5dd: -6.133707
   m_TransitionOverrides: {}
 --- !u!244 &4138082553220417865
 AudioMixerEffectController:
@@ -117,6 +136,25 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &6249746280213148034
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SFX Tirs Chat
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 9066340d5c6f39b47a12e441822bdbf6
+  m_Children: []
+  m_Volume: 30fd9256399b5da4e95a2d29255dfc50
+  m_Pitch: 4d577a2fd5539274580585b3e23e6461
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2097952775602693232}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &6852973562339249146
 AudioMixerGroupController:
   m_ObjectHideFlags: 0

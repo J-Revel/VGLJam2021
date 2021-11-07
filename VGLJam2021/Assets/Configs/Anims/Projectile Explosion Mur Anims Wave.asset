@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Projectile Explosion Mur Anims Wave
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Explosion Mur
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: 8ce7c475099134b488a130c9604b78e3, type: 3}
+      - {fileID: 21300000, guid: 70a13fe2419575e4e84370ea4aea01ab, type: 3}
+      - {fileID: 21300000, guid: 81bca3cd561f5b644b77cf950e3f123f, type: 3}
+      - {fileID: 21300000, guid: c7b870d6b489e7c4aac232f29bde053b, type: 3}
+      - {fileID: 21300000, guid: 01445ff7a55ad184dacb87aad4cf2b46, type: 3}
+      - {fileID: 21300000, guid: 66418a53959435c4ab0d709b56a98ac8, type: 3}
+      - {fileID: 21300000, guid: 9f22a3a522dab33458b456ad1e16523c, type: 3}
+      - {fileID: 21300000, guid: 498ed3af74b17404b81e2b758e909934, type: 3}
+      - {fileID: 21300000, guid: f8a688bc1f1496d4781ba73f06174043, type: 3}
+      - {fileID: 21300000, guid: ce13e39dfbfe18e4daf96ef64d0ae10c, type: 3}
+      - {fileID: 21300000, guid: 084071c515a11d24d86657ec38104b6e, type: 3}
+      - {fileID: 21300000, guid: 64dd05289330a694894b769b8e75f9ef, type: 3}
+      - {fileID: 21300000, guid: 72e21185ceceff040b251571602117b3, type: 3}
+      - {fileID: 21300000, guid: 4637c11d1b047a14b83a6e2767c006ac, type: 3}
+      actionPoints: []
+      framePerSecond: 24
+      loop: 1
+  actionPointNames: []
