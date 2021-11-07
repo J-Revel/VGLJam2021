@@ -3145,6 +3145,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7d8b332810668bc46881426663104400, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (21)
@@ -6447,6 +6451,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb1df6b281b70784ca15eb0dd0718395, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (8)
