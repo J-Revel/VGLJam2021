@@ -108,6 +108,8 @@ MonoBehaviour:
   invincibilityDuration: 0
   deathScore: 5
   deathComboIndex: 1
+  bonusEffect: {fileID: 2193367353901254716, guid: 318a7bdce2dac8140afa60e2a3565f15, type: 3}
+  deathBonusColor: {r: 1, g: 1, b: 1, a: 0}
   destroyOnDeath: 1
 --- !u!50 &302639527545849265
 Rigidbody2D:

@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
     public float invincibilityDuration = 0;
     public int deathScore = 0;
     public int deathComboIndex = 0; 
+    public ScoreBonusEffect bonusEffect;
+    public Color deathBonusColor;
 
     public System.Action hurtDelegate;
     public System.Action<Vector2> deathDelegate;
@@ -27,7 +29,10 @@ public class Health : MonoBehaviour
             deathDelegate?.Invoke(damageDirection);
             if(deathScore > 0)
             {
-                ScoreSystem.instance.AddScore(deathScore, deathComboIndex);
+                int score = ScoreSystem.instance.AddScore(deathScore, deathComboIndex);
+                ScoreBonusEffect effect = Instantiate(bonusEffect, transform.position, Quaternion.identity);
+                effect.color = deathBonusColor;
+                effect.score = score;
             }
             enabled = false;
             if(destroyOnDeath)
