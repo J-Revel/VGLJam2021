@@ -15,11 +15,14 @@ public class HurtAnim : MonoBehaviour
     public float maxTargetScale = 0.9f;
     private float targetAngle;
     private float targetScale;
+    private Vector3 startScale;
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        if(spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
         GetComponentInParent<Health>().hurtDelegate += OnHurt;
+        startScale = transform.localScale;
     }
 
     void Update()
@@ -27,16 +30,19 @@ public class HurtAnim : MonoBehaviour
         if(animStarted)
         {
             animTime += Time.deltaTime;
-            if(animTime > duration)
-            {
-                animStarted = false;
-            }
             float animRatio = 1 - Mathf.Abs(animTime / duration - 0.5f) * 2;
             float scale = targetScale + (1 - animRatio) * (1 - targetScale);
-            transform.localScale = new Vector3(scale, scale, scale);
+            transform.localScale = startScale *scale;
             float angle = animRatio * targetAngle;
             transform.localRotation = Quaternion.AngleAxis(angle, Vector3.forward);
             spriteRenderer.color = Color.Lerp(Color.white, Color.red, animRatio);
+            if(animTime > duration)
+            {
+                animStarted = false;
+                transform.localScale = startScale;
+                transform.localRotation = Quaternion.identity;
+                spriteRenderer.color = Color.white;
+            }
         }
     }
 

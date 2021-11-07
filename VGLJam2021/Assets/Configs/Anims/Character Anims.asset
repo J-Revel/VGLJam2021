@@ -29,4 +29,57 @@ MonoBehaviour:
       actionPoints: []
       framePerSecond: 8
       loop: 1
+  - name: Die
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: d22629d1328e6d341a1cf396e27faad7, type: 3}
+      - {fileID: 21300000, guid: 8a3f452f9a2febc41aeba1d18d2b00cb, type: 3}
+      - {fileID: 21300000, guid: 0aa0e925ddb14874a8bd0c1475fe7b48, type: 3}
+      - {fileID: 21300000, guid: c3a54c84da2af6649b99b38b895c967a, type: 3}
+      - {fileID: 21300000, guid: 5b27c6c87d391fe48b6ded7d30fffdcb, type: 3}
+      - {fileID: 21300000, guid: 53bf9deb92d04c64da38a9278ddd4860, type: 3}
+      - {fileID: 21300000, guid: dcd0f57389a8f9946bafb4696b0ef2ad, type: 3}
+      - {fileID: 21300000, guid: 2e467c1ffbdaaae4999772a195b06392, type: 3}
+      - {fileID: 21300000, guid: 69ecfdd672867744893512ff338e59ff, type: 3}
+      - {fileID: 21300000, guid: f47e5dd63f5ad2648bba8758e985cee8, type: 3}
+      - {fileID: 21300000, guid: 5c9abf6c0bc2baf43a0de6626700d183, type: 3}
+      - {fileID: 21300000, guid: 2d82acf3a4f467a4f83e24856808e9e7, type: 3}
+      - {fileID: 21300000, guid: 8b5c0ec47c22ed140b85da6e27a12571, type: 3}
+      - {fileID: 21300000, guid: cca8661389515fd4f86cec7790190446, type: 3}
+      - {fileID: 21300000, guid: 9b9a4e56a2f506f499021c4c4461f23f, type: 3}
+      - {fileID: 21300000, guid: a8d95c2ec6b3e454e883569fb4827e59, type: 3}
+      - {fileID: 21300000, guid: 8f5f0feeacb1f344890d47b141455104, type: 3}
+      - {fileID: 21300000, guid: d4324fb49bfcbba47bafac97c2f58ad5, type: 3}
+      - {fileID: 21300000, guid: f160e1fa80a7aed49ad89ecbc94d1893, type: 3}
+      - {fileID: 21300000, guid: c234797c39446594c93e7eb840b1d47a, type: 3}
+      - {fileID: 21300000, guid: 28e035fcf0082954eb0659b9f6bc7ae3, type: 3}
+      - {fileID: 21300000, guid: abfcc847ac0f7474baf553071a13df35, type: 3}
+      - {fileID: 21300000, guid: 876c3c12e53c49448bacc36873a226a5, type: 3}
+      - {fileID: 21300000, guid: cc9e21f2a130c7549bb731f25ca0d7ac, type: 3}
+      - {fileID: 21300000, guid: 9460464faca042b44b25aef22470589b, type: 3}
+      - {fileID: 21300000, guid: 37e0b3af63832dd4daf24bfa57ae2762, type: 3}
+      - {fileID: 21300000, guid: 76b4da76114a0b942a109de66631cc12, type: 3}
+      - {fileID: 21300000, guid: d9f745cf6e54d384db6ce8f684c3bd14, type: 3}
+      - {fileID: 21300000, guid: fa4f4172ea923604fa28f761fc671d48, type: 3}
+      - {fileID: 21300000, guid: 4edc562cf1c9d43449f79fb0adaa3d80, type: 3}
+      - {fileID: 21300000, guid: 1869ce53a17cfa2449eb94ba72eb2307, type: 3}
+      - {fileID: 21300000, guid: f6bb830d004a9ba4cb83a88379205783, type: 3}
+      - {fileID: 21300000, guid: 496624a82d02f554fafd4f3835a413ad, type: 3}
+      - {fileID: 21300000, guid: 9404cb92e6bc2244ba2c09fab0f5502b, type: 3}
+      - {fileID: 21300000, guid: 01801a145dee59a42974ab6992eb2d0b, type: 3}
+      - {fileID: 21300000, guid: 39347a126ca17644f8f3c8db729d4de6, type: 3}
+      - {fileID: 21300000, guid: 6c416234b529a1743a5e137571bfca7e, type: 3}
+      - {fileID: 21300000, guid: 71a1ae1ab2c65494f9fcf76f747ef22b, type: 3}
+      - {fileID: 21300000, guid: a285b29e9f142c1448ccdfd1fa44676e, type: 3}
+      - {fileID: 21300000, guid: ea2c4b2f7d325b249be40c8ebb2dbd34, type: 3}
+      - {fileID: 21300000, guid: c06ee399e913b0a4b8c1efca391c36fa, type: 3}
+      - {fileID: 21300000, guid: 146899f7c3f1f7441a7f8711f594d3df, type: 3}
+      - {fileID: 21300000, guid: 43fa9876710981848a1d1e48c3bdd40c, type: 3}
+      - {fileID: 21300000, guid: b8cd09004848c244cbde2a3347fa87ca, type: 3}
+      - {fileID: 21300000, guid: 8998afc9d3dc6ea46bd221907941ff30, type: 3}
+      - {fileID: 21300000, guid: dfa8726cba4820848ba8f335c23ea211, type: 3}
+      - {fileID: 21300000, guid: bc6c100933727204a9d8d2687384cb4d, type: 3}
+      actionPoints: []
+      framePerSecond: 12
+      loop: 0
   actionPointNames: []

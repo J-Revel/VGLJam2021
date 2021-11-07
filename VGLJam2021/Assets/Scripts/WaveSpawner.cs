@@ -14,6 +14,7 @@ public class WaveSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public float spawnDelay = 5;
     public float spawnTime = 10;
+    public Transform spawnParent;
 
     void Start()
     {
@@ -38,7 +39,7 @@ public class WaveSpawner : MonoBehaviour
                 int spawnPointIndex = Random.Range(0, availableSpawnPoints.Count);
                 Transform spawnPoint = availableSpawnPoints[spawnPointIndex];
                 availableSpawnPoints.RemoveAt(spawnPointIndex);
-                Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPoint.position, spawnPoint.rotation);
+                Instantiate(enemies[Random.Range(0, enemies.Length)], spawnPoint.position, spawnPoint.rotation, spawnParent);
             }
         }
     }

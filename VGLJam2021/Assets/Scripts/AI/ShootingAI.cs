@@ -41,7 +41,7 @@ public class ShootingAI : MonoBehaviour
             {
                 loadTime += Time.deltaTime;
                 print(loadTime);
-                if(loadTime >= loadDuration)
+                if(loadingFX != null && loadTime >= loadDuration)
                     loadingFX.SetActive(false);
                 
             }
@@ -74,7 +74,8 @@ public class ShootingAI : MonoBehaviour
             if(burstIndex == 0 && !loading)
             {
                 loading = true;
-                loadingFX.SetActive(true);
+                if(loadingFX != null)
+                    loadingFX.SetActive(true);
             }
         }
         if(burstIndex >= burstCount)

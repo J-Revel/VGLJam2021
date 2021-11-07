@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
             for(int i=0; i<dashFXCount; i++)
             {
                 SpriteRenderer spriteRenderer = Instantiate(dashFXPrefab, transform.position + new Vector3(dashDirection.x, dashDirection.y, 0) * i / dashFXCount, Quaternion.identity).GetComponentInChildren<SpriteRenderer>();
+                spriteRenderer.color = new Color(1, 1, 1, (float)i / dashFXCount);
                 spriteRenderer.flipX = rigidbody.velocity.x < 0;
             }
         }
