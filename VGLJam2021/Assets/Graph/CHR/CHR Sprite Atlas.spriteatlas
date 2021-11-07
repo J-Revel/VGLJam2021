@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CHR Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 4436c038a2c0b2840808b7949df1b1e4, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: b8cd09004848c244cbde2a3347fa87ca, type: 3}
+  - {fileID: 21300000, guid: 50b3b7d0eb93c0546aeba4ba3a6eeae1, type: 3}
+  - {fileID: 21300000, guid: d22629d1328e6d341a1cf396e27faad7, type: 3}
+  - {fileID: 21300000, guid: 39347a126ca17644f8f3c8db729d4de6, type: 3}
+  - {fileID: 21300000, guid: 876c3c12e53c49448bacc36873a226a5, type: 3}
+  - {fileID: 21300000, guid: fa4f4172ea923604fa28f761fc671d48, type: 3}
+  - {fileID: 21300000, guid: 9404cb92e6bc2244ba2c09fab0f5502b, type: 3}
+  - {fileID: 21300000, guid: cc9e21f2a130c7549bb731f25ca0d7ac, type: 3}
+  - {fileID: 21300000, guid: cca8661389515fd4f86cec7790190446, type: 3}
+  - {fileID: 21300000, guid: eeb91d53b525dd84c9ebc320914b81cf, type: 3}
+  - {fileID: 21300000, guid: 1869ce53a17cfa2449eb94ba72eb2307, type: 3}
+  - {fileID: 21300000, guid: dcd0f57389a8f9946bafb4696b0ef2ad, type: 3}
+  - {fileID: 21300000, guid: 2d82acf3a4f467a4f83e24856808e9e7, type: 3}
+  - {fileID: 21300000, guid: 01801a145dee59a42974ab6992eb2d0b, type: 3}
+  - {fileID: 21300000, guid: 6c416234b529a1743a5e137571bfca7e, type: 3}
+  - {fileID: 21300000, guid: c3a54c84da2af6649b99b38b895c967a, type: 3}
+  - {fileID: 21300000, guid: d4324fb49bfcbba47bafac97c2f58ad5, type: 3}
+  - {fileID: 21300000, guid: b212d1c4b0a82fc4da0d6aae5fdb43db, type: 3}
+  - {fileID: 21300000, guid: 8b5c0ec47c22ed140b85da6e27a12571, type: 3}
+  - {fileID: 21300000, guid: 0aa0e925ddb14874a8bd0c1475fe7b48, type: 3}
+  - {fileID: 21300000, guid: 9b9a4e56a2f506f499021c4c4461f23f, type: 3}
+  - {fileID: 21300000, guid: 43fa9876710981848a1d1e48c3bdd40c, type: 3}
+  - {fileID: 21300000, guid: 76b4da76114a0b942a109de66631cc12, type: 3}
+  - {fileID: 21300000, guid: f47e5dd63f5ad2648bba8758e985cee8, type: 3}
+  - {fileID: 21300000, guid: 69ecfdd672867744893512ff338e59ff, type: 3}
+  - {fileID: 21300000, guid: abfcc847ac0f7474baf553071a13df35, type: 3}
+  - {fileID: 21300000, guid: 146899f7c3f1f7441a7f8711f594d3df, type: 3}
+  - {fileID: 21300000, guid: 496624a82d02f554fafd4f3835a413ad, type: 3}
+  - {fileID: 21300000, guid: 5b27c6c87d391fe48b6ded7d30fffdcb, type: 3}
+  - {fileID: 21300000, guid: bc6c100933727204a9d8d2687384cb4d, type: 3}
+  - {fileID: 21300000, guid: c06ee399e913b0a4b8c1efca391c36fa, type: 3}
+  - {fileID: 21300000, guid: 8998afc9d3dc6ea46bd221907941ff30, type: 3}
+  - {fileID: 21300000, guid: 71a1ae1ab2c65494f9fcf76f747ef22b, type: 3}
+  - {fileID: 21300000, guid: db40326a382f88e4980579a4fdcc8623, type: 3}
+  - {fileID: 21300000, guid: 445aeb6a51f29034ab8fe316ddf1f4f3, type: 3}
+  - {fileID: 21300000, guid: f160e1fa80a7aed49ad89ecbc94d1893, type: 3}
+  - {fileID: 21300000, guid: 53bf9deb92d04c64da38a9278ddd4860, type: 3}
+  - {fileID: 21300000, guid: 4edc562cf1c9d43449f79fb0adaa3d80, type: 3}
+  - {fileID: 21300000, guid: dfa8726cba4820848ba8f335c23ea211, type: 3}
+  - {fileID: 21300000, guid: 5c9abf6c0bc2baf43a0de6626700d183, type: 3}
+  - {fileID: 21300000, guid: c234797c39446594c93e7eb840b1d47a, type: 3}
+  - {fileID: 21300000, guid: 50f726dc2053e5c4492ba6e18888f1c9, type: 3}
+  - {fileID: 21300000, guid: 28e035fcf0082954eb0659b9f6bc7ae3, type: 3}
+  - {fileID: 21300000, guid: f6bb830d004a9ba4cb83a88379205783, type: 3}
+  - {fileID: 21300000, guid: 0155025df47a5fa49a07d3005757cdcf, type: 3}
+  - {fileID: 21300000, guid: 0895f37d4478ad047a210c025f6d8642, type: 3}
+  - {fileID: 21300000, guid: abfff8ad61974b1488c8b74b4f4e1d3f, type: 3}
+  - {fileID: 21300000, guid: a8d95c2ec6b3e454e883569fb4827e59, type: 3}
+  - {fileID: 21300000, guid: 4e35ac7ebb9b9764599a17a53d4f3e75, type: 3}
+  - {fileID: 21300000, guid: a285b29e9f142c1448ccdfd1fa44676e, type: 3}
+  - {fileID: 21300000, guid: 8f5f0feeacb1f344890d47b141455104, type: 3}
+  - {fileID: 21300000, guid: 2e467c1ffbdaaae4999772a195b06392, type: 3}
+  - {fileID: 21300000, guid: 8a3f452f9a2febc41aeba1d18d2b00cb, type: 3}
+  - {fileID: 21300000, guid: ea2c4b2f7d325b249be40c8ebb2dbd34, type: 3}
+  - {fileID: 21300000, guid: 9460464faca042b44b25aef22470589b, type: 3}
+  - {fileID: 21300000, guid: 32b92a7f14a39e44fb32325bf9632294, type: 3}
+  - {fileID: 21300000, guid: 37e0b3af63832dd4daf24bfa57ae2762, type: 3}
+  - {fileID: 21300000, guid: d9f745cf6e54d384db6ce8f684c3bd14, type: 3}
+  - {fileID: 21300000, guid: 002091df64b4deb4ba92913380cad058, type: 3}
+  - {fileID: 21300000, guid: e4dcb597e600f2341b5eccaab70ed916, type: 3}
+  - {fileID: 21300000, guid: 6b0000f5dfbeee244adc4489c84530a9, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - CHR Chat Mallow_Mort_43
+  - CHR_Ombre_v01
+  - CHR Chat Mallow_Mort_00
+  - CHR Chat Mallow_Mort_35
+  - CHR Chat Mallow_Mort_22
+  - CHR Chat Mallow_Mort_28
+  - CHR Chat Mallow_Mort_33
+  - CHR Chat Mallow_Mort_23
+  - CHR Chat Mallow_Mort_13
+  - CHR_Bouclier_v01
+  - CHR Chat Mallow_Mort_30
+  - CHR Chat Mallow_Mort_06
+  - CHR Chat Mallow_Mort_11
+  - CHR Chat Mallow_Mort_34
+  - CHR Chat Mallow_Mort_36
+  - CHR Chat Mallow_Mort_03
+  - CHR Chat Mallow_Mort_17
+  - CHR Chat Mallow_Dash_Fx
+  - CHR Chat Mallow_Mort_12
+  - CHR Chat Mallow_Mort_02
+  - CHR Chat Mallow_Mort_14
+  - CHR Chat Mallow_Mort_42
+  - CHR Chat Mallow_Mort_26
+  - CHR Chat Mallow_Mort_09
+  - CHR Chat Mallow_Mort_08
+  - CHR Chat Mallow_Mort_21
+  - CHR Chat Mallow_Mort_41
+  - CHR Chat Mallow_Mort_32
+  - CHR Chat Mallow_Mort_04
+  - CHR Chat Mallow_Mort_46
+  - CHR Chat Mallow_Mort_40
+  - CHR Chat Mallow_Mort_44
+  - CHR Chat Mallow_Mort_37
+  - CHR Chat Mallow_Arme
+  - CHR Chat Mallow_Dash
+  - CHR Chat Mallow_Mort_18
+  - CHR Chat Mallow_Mort_05
+  - CHR Chat Mallow_Mort_29
+  - CHR Chat Mallow_Mort_45
+  - CHR Chat Mallow_Mort_10
+  - CHR Chat Mallow_Mort_19
+  - CHR_Legume_Rapide_v01
+  - CHR Chat Mallow_Mort_20
+  - CHR Chat Mallow_Mort_31
+  - CHR Chat Mallow_Idle_01
+  - CHR_Legume_Horde_v01
+  - CHR_Legume_Tireur_v01
+  - CHR Chat Mallow_Mort_15
+  - CHR_Legume_Bouclier_v01
+  - CHR Chat Mallow_Mort_38
+  - CHR Chat Mallow_Mort_16
+  - CHR Chat Mallow_Mort_07
+  - CHR Chat Mallow_Mort_01
+  - CHR Chat Mallow_Mort_39
+  - CHR Chat Mallow_Mort_24
+  - CHR_Legume_Flingue_v01
+  - CHR Chat Mallow_Mort_25
+  - CHR Chat Mallow_Mort_27
+  - CHR Chat Mallow_Idle_02
+  - CHR Chat Mallow_02
+  - CHR Chat Mallow_01
+  m_RenderDataMap: {}
+  m_Tag: CHR Sprite Atlas
+  m_IsVariant: 0
