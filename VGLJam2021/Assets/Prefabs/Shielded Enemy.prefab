@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 302639527545849167}
   - component: {fileID: 7145784136982575586}
   - component: {fileID: 6677696538662009032}
+  - component: {fileID: -8175366255496511477}
   m_Layer: 0
   m_Name: Shielded Enemy
   m_TagString: Untagged
@@ -55,6 +56,8 @@ MonoBehaviour:
   invincibilityDuration: 0
   deathScore: 50
   deathComboIndex: 2
+  bonusEffect: {fileID: 2193367353901254716, guid: 318a7bdce2dac8140afa60e2a3565f15, type: 3}
+  deathBonusColor: {r: 1, g: 1, b: 1, a: 0}
   destroyOnDeath: 1
 --- !u!50 &302639527545849265
 Rigidbody2D:
@@ -145,6 +148,19 @@ MonoBehaviour:
   splatterPrefab: {fileID: 3929593981600889230, guid: e5e942d7618df6741a77c2ef0c45b467, type: 3}
   minScale: 2.3
   maxScale: 2.8
+--- !u!114 &-8175366255496511477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302639527545849269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7312b9d23626546b68d87c61d66499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1802337701653536186}
 --- !u!1 &361514530182344981
 GameObject:
   m_ObjectHideFlags: 0
