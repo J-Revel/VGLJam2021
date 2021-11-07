@@ -21,6 +21,6 @@ public class ScoreBonusEffect : MonoBehaviour
     {
         time += Time.deltaTime;
         transform.position += Vector3.up * verticalSpeed * Time.deltaTime;
-        text.color = new Color(color.r, color.g, color.b, 1 - time / fadeDuration);
+        text.color = new Color(color.r, color.g, color.b, (1 - time * time / fadeDuration / fadeDuration));
     }
 }
