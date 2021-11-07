@@ -32,8 +32,4 @@ public class HealthDisplay : MonoBehaviour
             images[i].sprite = health.health > i ? onSprite : offSprite;
         }
     }
-    void Update()
-    {
-        
-    }
 }
