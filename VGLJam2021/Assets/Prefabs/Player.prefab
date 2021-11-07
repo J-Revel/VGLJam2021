@@ -247,6 +247,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   invincibilityDuration: 0.5
+  deathScore: 0
+  deathComboIndex: 0
   destroyOnDeath: 0
 --- !u!114 &491464905
 MonoBehaviour:
@@ -318,6 +320,7 @@ MonoBehaviour:
   range: 10
   maxPushForce: 50
   minPushForce: 20
+  fx: {fileID: 3015204703055808286, guid: 6ce495103e4e4f6439ab208deffa1c76, type: 3}
 --- !u!82 &1443984093796515327
 AudioSource:
   m_ObjectHideFlags: 0

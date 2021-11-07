@@ -15,7 +15,7 @@ public class ScoreSystem : MonoBehaviour
         instance = this;
     }
 
-    public void AddScore(int value, int comboIndex)
+    public int AddScore(int value, int comboIndex)
     {
         if(comboIndex != this.comboIndex)
         {
@@ -27,5 +27,6 @@ public class ScoreSystem : MonoBehaviour
             comboValue = Mathf.Min(comboValue+1, maxComboValue);
         }
         score += value * comboValue;
+        return value * comboValue;
     }
 }

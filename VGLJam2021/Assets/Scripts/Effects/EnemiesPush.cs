@@ -7,6 +7,7 @@ public class EnemiesPush : MonoBehaviour
     public float range;
     public float maxPushForce;
     public float minPushForce;
+    public Transform fx;
     
     public void Push()
     {
@@ -19,5 +20,6 @@ public class EnemiesPush : MonoBehaviour
                 collider.attachedRigidbody.AddForce(forceDirection.normalized * (minPushForce + (maxPushForce - minPushForce) * (forceDirection.magnitude / range)), ForceMode2D.Impulse);
             }
         }
+        Instantiate(fx, transform.position, transform.rotation);
     }
 }
