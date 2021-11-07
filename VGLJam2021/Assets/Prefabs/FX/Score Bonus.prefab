@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7387022824213590702}
   - component: {fileID: 7817260818529264295}
   - component: {fileID: 337317056975619946}
+  - component: {fileID: 2193367353901254716}
   m_Layer: 0
   m_Name: Score Bonus
   m_TagString: Untagged
@@ -170,3 +171,20 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &2193367353901254716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6286022409127684936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e8f36cc8564319498429291cd7ad307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 337317056975619946}
+  fadeDuration: 1
+  verticalSpeed: 0.5
+  color: {r: 1, g: 0, b: 0, a: 0}
+  score: 0

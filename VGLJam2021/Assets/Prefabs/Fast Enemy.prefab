@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 285342147218145852}
   - component: {fileID: -6854323513529220409}
   - component: {fileID: 6841761237853295502}
+  - component: {fileID: 6744019206101109405}
   m_Layer: 0
   m_Name: Fast Enemy
   m_TagString: Untagged
@@ -107,6 +108,8 @@ MonoBehaviour:
   invincibilityDuration: 0
   deathScore: 5
   deathComboIndex: 1
+  bonusEffect: {fileID: 2193367353901254716, guid: 318a7bdce2dac8140afa60e2a3565f15, type: 3}
+  deathBonusColor: {r: 1, g: 1, b: 1, a: 0}
   destroyOnDeath: 1
 --- !u!50 &302639527545849265
 Rigidbody2D:
@@ -218,6 +221,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6744019206101109405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302639527545849269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e7312b9d23626546b68d87c61d66499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 302639527545849268}
 --- !u!1 &5483528575257369624
 GameObject:
   m_ObjectHideFlags: 0

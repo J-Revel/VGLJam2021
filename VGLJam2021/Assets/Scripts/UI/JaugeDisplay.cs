@@ -17,6 +17,7 @@ public class JaugeDisplay : MonoBehaviour
     public int currentComboValue;
     public float displayComboSpeed = 3;
     private float displayComboValue;
+    public TMPro.TextMeshProUGUI comboText;
 
     private void Start()
     {
@@ -35,6 +36,7 @@ public class JaugeDisplay : MonoBehaviour
             displayComboValue = Mathf.Max(displayComboValue - Time.deltaTime * displayComboSpeed, ScoreSystem.instance.comboValue);
         }
         jaugeImage.fillAmount = displayComboValue / ScoreSystem.instance.maxComboValue;
+        comboText.text = "x" + ScoreSystem.instance.comboValue;
     }
 
     public void UpdateEnemySprite()
@@ -44,5 +46,6 @@ public class JaugeDisplay : MonoBehaviour
         currentComboIndex = ScoreSystem.instance.comboIndex;
         jaugeImage.color = jaugeColors[ScoreSystem.instance.comboIndex + 1];
         displayComboValue = ScoreSystem.instance.comboValue;
+        comboText.color = jaugeColors[ScoreSystem.instance.comboIndex + 1];
     }
 }
