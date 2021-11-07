@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 337317056975619946}
-  fadeDuration: 1
-  verticalSpeed: 0.5
+  fadeDuration: 1.5
+  verticalSpeed: 0.8
   color: {r: 1, g: 0, b: 0, a: 0}
   score: 0
