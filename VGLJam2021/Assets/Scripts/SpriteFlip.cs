@@ -5,11 +5,12 @@ using UnityEngine;
 public class SpriteFlip : MonoBehaviour
 {
     private new Rigidbody2D rigidbody;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        if(spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()

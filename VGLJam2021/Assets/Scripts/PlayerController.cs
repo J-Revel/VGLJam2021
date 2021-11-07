@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     public static PlayerController instance;
     public AnimatedSprite animatedSprite;
-    public SpriteRenderer dashFXPrefab;
+    public Transform dashFXPrefab;
     public int dashFXCount = 5;
 
     void Awake()
@@ -57,7 +57,9 @@ public class PlayerController : MonoBehaviour
             rigidbody.MovePosition(rigidbody.position + dashDirection);
             for(int i=0; i<dashFXCount; i++)
             {
-                Instantiate(dashFXPrefab, transform.position + new Vector3(dashDirection.x, dashDirection.y, 0) * i / dashFXCount, Quaternion.identity).flipX = rigidbody.velocity.x < 0;
+                SpriteRenderer spriteRenderer = Instantiate(dashFXPrefab, transform.position + new Vector3(dashDirection.x, dashDirection.y, 0) * i / dashFXCount, Quaternion.identity).GetComponentInChildren<SpriteRenderer>();
+                spriteRenderer.color = new Color(1, 1, 1, (float)i / dashFXCount);
+                spriteRenderer.flipX = rigidbody.velocity.x < 0;
             }
         }
         Camera camera = Camera.main;
