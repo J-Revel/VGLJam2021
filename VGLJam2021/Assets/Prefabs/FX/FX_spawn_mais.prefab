@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8082192187305111502}
   - component: {fileID: 5326493583574877367}
   - component: {fileID: 5062938083686928389}
+  - component: {fileID: 8697538796920898849}
   m_Layer: 0
   m_Name: FX_spawn_mais
   m_TagString: Untagged
@@ -102,3 +103,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8697538796920898849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6719888995831223646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3787666c5b9cef44b127aa2fd487e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 302639527545849267, guid: f8e36d4c30ae49f4289e04ccae282d70, type: 3}
