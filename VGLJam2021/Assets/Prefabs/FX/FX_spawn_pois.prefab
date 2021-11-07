@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3778754926168503763}
   - component: {fileID: 3778754926168503756}
   - component: {fileID: 3778754926168503757}
+  - component: {fileID: 4406480084427333904}
   m_Layer: 0
   m_Name: FX_spawn_pois
   m_TagString: Untagged
@@ -102,3 +103,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4406480084427333904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3778754926168503758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3787666c5b9cef44b127aa2fd487e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 302639527545849267, guid: 750078484130b774689592b43fe78871, type: 3}

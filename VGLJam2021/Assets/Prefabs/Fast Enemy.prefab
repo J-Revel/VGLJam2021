@@ -104,6 +104,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  invincibilityDuration: 0
+  deathScore: 5
+  deathComboIndex: 1
+  destroyOnDeath: 1
 --- !u!50 &302639527545849265
 Rigidbody2D:
   serializedVersion: 4

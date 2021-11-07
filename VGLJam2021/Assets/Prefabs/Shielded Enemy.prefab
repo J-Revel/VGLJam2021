@@ -52,6 +52,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  invincibilityDuration: 0
+  deathScore: 50
+  deathComboIndex: 2
+  destroyOnDeath: 1
 --- !u!50 &302639527545849265
 Rigidbody2D:
   serializedVersion: 4
@@ -118,10 +122,14 @@ MonoBehaviour:
   escapeForce: 5
   shootRange: 15
   escapeRange: 10
-  shootInterval: 2
+  loadDuration: 2
   shootTime: 0
   angularAcceleration: 6
+  burstCount: 5
+  reloadDuration: 2
+  shootInterval: 2
   weapon: {fileID: 3133071016708900798}
+  loadingFX: {fileID: 0}
 --- !u!114 &6677696538662009032
 MonoBehaviour:
   m_ObjectHideFlags: 0

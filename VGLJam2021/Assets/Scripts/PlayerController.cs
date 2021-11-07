@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public AnimatedSprite animatedSprite;
     public Transform dashFXPrefab;
     public int dashFXCount = 5;
+    public AudioSource dashAudioSource;
 
     void Awake()
     {
@@ -44,7 +45,7 @@ public class PlayerController : MonoBehaviour
         else animatedSprite.SelectAnim("Idle");
         if(Input.GetButtonDown("Dash"))
         {
-            
+            dashAudioSource.Play();
             Vector2 inputDirection = ((Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")).normalized);
             RaycastHit2D hit = Physics2D.Raycast(rigidbody.position, inputDirection, dashDistance, raycastLayer);
             Vector2 dashDirection = Vector3.zero;
