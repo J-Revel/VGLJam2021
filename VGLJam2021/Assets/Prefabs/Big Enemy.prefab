@@ -259,6 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5815350152263057837}
   - component: {fileID: 2848089804342387836}
+  - component: {fileID: 8375248730000402530}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -331,6 +332,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8375248730000402530
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6025345487729248848}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6429974040190566459
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +413,7 @@ GameObject:
   - component: {fileID: 8563061483692679866}
   - component: {fileID: 5882024482035152718}
   - component: {fileID: 9176465112121373572}
+  - component: {fileID: 923911485631176691}
   m_Layer: 0
   m_Name: Big Enemy (1)
   m_TagString: Untagged
@@ -484,6 +505,25 @@ MonoBehaviour:
   maxTargetAngle: 20
   minTargetScale: 0.7
   maxTargetScale: 0.8
+--- !u!95 &923911485631176691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6650973959566363507}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 799e8dc50cf76d64483c2350183a1a1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8474877142756655885
 GameObject:
   m_ObjectHideFlags: 0
