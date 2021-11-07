@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 5
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3627141365888344801}
 --- !u!1001 &4193615935146069764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177,5 +177,10 @@ PrefabInstance:
 --- !u!4 &3627141365888344800 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5420622755075443223, guid: bae7d7db4c9a7ee4291bc9d65d864101, type: 3}
+  m_PrefabInstance: {fileID: 8750452808967104759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3627141365888344801 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5420622755075443222, guid: bae7d7db4c9a7ee4291bc9d65d864101, type: 3}
   m_PrefabInstance: {fileID: 8750452808967104759}
   m_PrefabAsset: {fileID: 0}
