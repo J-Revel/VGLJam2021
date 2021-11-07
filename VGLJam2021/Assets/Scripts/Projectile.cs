@@ -14,6 +14,8 @@ public class Projectile : MonoBehaviour
     public int damage = 1;
     public float recoil = 10;
     public TeamDataHolder teamDataHolder;
+    public Transform impactFx;
+    public LayerMask impactLayer;
     
     void Start()
     {
@@ -21,14 +23,15 @@ public class Projectile : MonoBehaviour
         teamDataHolder = GetComponent<TeamDataHolder>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Health health = collider.GetComponent<Health>();
-        TeamDataHolder otherTeamDataHolder = collider.GetComponent<TeamDataHolder>();
-        Rigidbody2D otherRigidbody = collider.GetComponentInParent<Rigidbody2D>();
+        Health health = collision.collider.GetComponent<Health>();
+        TeamDataHolder otherTeamDataHolder = collision.collider.GetComponent<TeamDataHolder>();
+        Rigidbody2D otherRigidbody = collision.collider.GetComponentInParent<Rigidbody2D>();
         
         if(otherTeamDataHolder == null)
         {
+            Instantiate(impactFx, transform.position, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, collision.contacts[0].normal), Vector3.forward));
             Destroy(gameObject);
         }
         else if(otherTeamDataHolder.team != teamDataHolder.team)
