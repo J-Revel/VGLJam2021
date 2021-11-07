@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
     public int health = 1;
     private float invincibilityTime = 0;
     public float invincibilityDuration = 0;
+    public int deathScore = 0;
+    public int deathComboIndex = 0; 
 
     public System.Action hurtDelegate;
     public System.Action<Vector2> deathDelegate;
@@ -23,6 +25,10 @@ public class Health : MonoBehaviour
         if(health <= 0)
         {
             deathDelegate?.Invoke(damageDirection);
+            if(deathScore > 0)
+            {
+                ScoreSystem.instance.AddScore(deathScore, deathComboIndex);
+            }
             enabled = false;
             if(destroyOnDeath)
                 Destroy(gameObject);
