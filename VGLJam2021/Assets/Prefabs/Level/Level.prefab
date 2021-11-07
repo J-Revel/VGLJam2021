@@ -602,7 +602,7 @@ MonoBehaviour:
   score: 0
   comboIndex: -1
   comboValue: 1
-  maxComboValue: 8
+  maxComboValue: 15
 --- !u!1 &4936101906638776208
 GameObject:
   m_ObjectHideFlags: 0
