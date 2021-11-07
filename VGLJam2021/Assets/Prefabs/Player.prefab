@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 491464905}
   - component: {fileID: 491464906}
   - component: {fileID: 1540725110}
+  - component: {fileID: 6757147047053390904}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -243,6 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  invincibilityDuration: 0.5
   destroyOnDeath: 0
 --- !u!114 &491464905
 MonoBehaviour:
@@ -280,6 +282,8 @@ MonoBehaviour:
   playing: 0
   targetDisplacement: 1
   targetAngle: 10
+  targetDistortion: 0.5
+  pushEffect: {fileID: 6757147047053390904}
 --- !u!114 &1540725110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +300,22 @@ MonoBehaviour:
   zoomDuration: 0.8
   zoomTargetDistance: 5
   cameraBehaviour: {fileID: 0}
-  gameoverMenuPrefab: {fileID: 4233295085381711832, guid: f11079a30df850342a6c717746807b7f, type: 3}
+  gameoverMenuPrefab: {fileID: 4233295085381711833, guid: f11079a30df850342a6c717746807b7f, type: 3}
+--- !u!114 &6757147047053390904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3062698656785438540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d155b508fef40048a166392a93f39e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 10
+  maxPushForce: 50
+  minPushForce: 20
 --- !u!1 &3062698657742788617
 GameObject:
   m_ObjectHideFlags: 0

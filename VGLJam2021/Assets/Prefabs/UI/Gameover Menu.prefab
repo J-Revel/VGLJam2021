@@ -355,7 +355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4233295086165891925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6622179047119366713}
+        m_TargetAssemblyTypeName: MenuButtonActions, Assembly-CSharp
+        m_MethodName: ReturnToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4233295087006023433
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,3 +493,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba460e53b2c3e147957a0df46eb9c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: {fileID: 6888251775498441032, guid: 8e2f4d34465eec9488408e469e641823, type: 3}
