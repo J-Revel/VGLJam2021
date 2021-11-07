@@ -451,7 +451,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60c5bfb69eeb93c4ba77f06324dd8541, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (17)
@@ -607,7 +611,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (16)
@@ -903,7 +907,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (7)
@@ -989,7 +993,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (14)
@@ -1227,7 +1231,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (13)
@@ -1313,7 +1317,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (21)
@@ -1953,7 +1957,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: ed9c6cdc0e4a49742be5fdb766b1f50c, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (1)
@@ -2039,7 +2047,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60c5bfb69eeb93c4ba77f06324dd8541, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (22)
@@ -2125,7 +2137,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60c5bfb69eeb93c4ba77f06324dd8541, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (4)
@@ -2453,7 +2469,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (18)
@@ -2691,7 +2707,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -2843,7 +2859,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02
@@ -2999,7 +3015,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (15)
@@ -3295,7 +3311,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (6)
@@ -3619,7 +3635,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -3783,7 +3799,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -3873,7 +3889,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
+    - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60c5bfb69eeb93c4ba77f06324dd8541, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (10)
@@ -4407,7 +4427,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -4579,7 +4599,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (8)
@@ -4875,7 +4895,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (20)
@@ -5031,7 +5051,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (3)
@@ -5409,7 +5429,7 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (11)
@@ -5577,11 +5597,11 @@ PrefabInstance:
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a9037df36d47a0f429207070aaa2dc3b, type: 2}
+      objectReference: {fileID: 2100000, guid: 4b2fa80c164020e449ff9f20761cebf5, type: 2}
     - target: {fileID: 885274127404090371, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: ed9c6cdc0e4a49742be5fdb766b1f50c, type: 2}
+      objectReference: {fileID: 2100000, guid: 60c5bfb69eeb93c4ba77f06324dd8541, type: 2}
     - target: {fileID: 1678114575858034134, guid: 044cf4506ba4a0243bccf59c553f08e8, type: 3}
       propertyPath: m_Name
       value: BG_ArcadeMachine_02 (2)
