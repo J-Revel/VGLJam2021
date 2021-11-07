@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 4664036524983652435}
   - component: {fileID: 4664036524983652432}
   - component: {fileID: 1900491385451308912}
+  - component: {fileID: -4599256966840389588}
   m_Layer: 7
   m_Name: Projectile 1 Explosion Mur
   m_TagString: Untagged
@@ -201,6 +202,19 @@ MonoBehaviour:
   animList: {fileID: 11400000, guid: edaa2fac3f0f25f4cb7b194d9ed80dce, type: 2}
   animIndex: 0
   loopAnim: 1
+--- !u!114 &-4599256966840389588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4664036524983652433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef38fcc75437c6499b8ca8cd76fd6c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatedSprite: {fileID: 8260779684178684986}
 --- !u!1 &6627798412797506169
 GameObject:
   m_ObjectHideFlags: 0
