@@ -1070,10 +1070,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Post-process Global Volume
       objectReference: {fileID: 0}
-    - target: {fileID: 6374072127798037873, guid: 9e341faf1fdefa042868b0e7944af90e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6374072127798037875, guid: 9e341faf1fdefa042868b0e7944af90e, type: 3}
       propertyPath: m_RootOrder
       value: 12
