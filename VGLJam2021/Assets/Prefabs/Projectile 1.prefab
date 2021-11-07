@@ -393,6 +393,10 @@ MonoBehaviour:
   damage: 1
   recoil: 50
   teamDataHolder: {fileID: 0}
+  impactFx: {fileID: 4664036524983652435, guid: 02ad45af2dc03e648b512184956e9af8, type: 3}
+  impactLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!58 &2532203373344731867
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -403,7 +407,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
