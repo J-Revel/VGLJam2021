@@ -52,11 +52,13 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2d82acf3a4f467a4f83e24856808e9e7, type: 3}
   - {fileID: 21300000, guid: 01801a145dee59a42974ab6992eb2d0b, type: 3}
   - {fileID: 21300000, guid: 6c416234b529a1743a5e137571bfca7e, type: 3}
+  - {fileID: 21300000, guid: b82db844af6aa204fb8b3587eea6fbd2, type: 3}
   - {fileID: 21300000, guid: c3a54c84da2af6649b99b38b895c967a, type: 3}
   - {fileID: 21300000, guid: d4324fb49bfcbba47bafac97c2f58ad5, type: 3}
   - {fileID: 21300000, guid: b212d1c4b0a82fc4da0d6aae5fdb43db, type: 3}
   - {fileID: 21300000, guid: 8b5c0ec47c22ed140b85da6e27a12571, type: 3}
   - {fileID: 21300000, guid: 0aa0e925ddb14874a8bd0c1475fe7b48, type: 3}
+  - {fileID: 21300000, guid: 9454ebd5829ac2b438080043aa4f78cf, type: 3}
   - {fileID: 21300000, guid: 9b9a4e56a2f506f499021c4c4461f23f, type: 3}
   - {fileID: 21300000, guid: 43fa9876710981848a1d1e48c3bdd40c, type: 3}
   - {fileID: 21300000, guid: 76b4da76114a0b942a109de66631cc12, type: 3}
@@ -114,11 +116,13 @@ SpriteAtlas:
   - CHR Chat Mallow_Mort_11
   - CHR Chat Mallow_Mort_34
   - CHR Chat Mallow_Mort_36
+  - CHR_Legume_MultiplieEnfant
   - CHR Chat Mallow_Mort_03
   - CHR Chat Mallow_Mort_17
   - CHR Chat Mallow_Dash_Fx
   - CHR Chat Mallow_Mort_12
   - CHR Chat Mallow_Mort_02
+  - CHR_Legume_Multiplie_Parent
   - CHR Chat Mallow_Mort_14
   - CHR Chat Mallow_Mort_42
   - CHR Chat Mallow_Mort_26
