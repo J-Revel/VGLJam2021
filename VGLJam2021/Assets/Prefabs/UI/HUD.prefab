@@ -489,20 +489,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 112e749606c6e3c43adc8d908d6ff01f, type: 3}
   - {fileID: 21300000, guid: f52fcceca4211104d9129b7dfb10cfb4, type: 3}
   - {fileID: 21300000, guid: 143a7b1d675105942b5d58195660c1a4, type: 3}
-  - {fileID: 21300000, guid: 112e749606c6e3c43adc8d908d6ff01f, type: 3}
+  - {fileID: 21300000, guid: 142dbd595babcec4a91a886dd8c24e49, type: 3}
   - {fileID: 21300000, guid: c3bb9120f5892d04c9c60f75018137c6, type: 3}
+  - {fileID: 21300000, guid: 1765edd9758fac34fa4956766ee9917f, type: 3}
   dynamicSprites:
   - {fileID: 21300000, guid: 92a958e42bd2f274bb6fabb5852e1146, type: 3}
   - {fileID: 21300000, guid: 49f37b199181956488584c501bd5befe, type: 3}
   - {fileID: 21300000, guid: e7b4b7641b4bd664887bf33ee94b884d, type: 3}
-  - {fileID: 21300000, guid: 92a958e42bd2f274bb6fabb5852e1146, type: 3}
+  - {fileID: 21300000, guid: a609275c4524fff4784c38212744ae67, type: 3}
   - {fileID: 21300000, guid: 5963cfae94b3ffd4f9f7d9e1ed48009c, type: 3}
+  - {fileID: 21300000, guid: 8fdf6161037fa9e48a44f7a350ffaa3b, type: 3}
   jaugeColors:
   - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 1, b: 0.07144809, a: 1}
-  - {r: 1, g: 0.73251253, b: 0, a: 1}
-  - {r: 1, g: 0, b: 0.81071854, a: 1}
+  - {r: 0.9764706, g: 0.25882354, b: 0.42352942, a: 1}
+  - {r: 0.2901961, g: 0.9254902, b: 0.6745098, a: 1}
+  - {r: 1, g: 0.72156864, b: 0.3647059, a: 1}
+  - {r: 0.96862745, g: 0.3254902, b: 0.85882354, a: 1}
+  - {r: 0.9529412, g: 0.96862745, b: 0.34117648, a: 1}
   fixImage: {fileID: 5955022613675574391}
   dynamicImage: {fileID: 9146564127000915725}
   animator: {fileID: 5518785693796391792}
