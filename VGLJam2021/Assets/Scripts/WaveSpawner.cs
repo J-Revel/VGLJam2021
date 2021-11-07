@@ -10,11 +10,19 @@ public struct Wave
 
 public class WaveSpawner : MonoBehaviour
 {
-    public Wave[] waves;
+    public Wave[] easyWaves;
+    public Wave[] mediumWaves;
+    public Wave[] hardWaves;
+    public AnimationCurve easyWaveCurve;
+    public AnimationCurve mediumWaveCurve;
+    public AnimationCurve hardWaveCurve;
     public Transform[] spawnPoints;
-    public float spawnDelay = 5;
+    public float startSpawnDelay = 5;
+    public float endSpawnDelay = 2;
     public float spawnTime = 10;
     public Transform spawnParent;
+    private float difficultyTime = 0;
+    public float difficultyDuration = 120;
 
     void Start()
     {
@@ -23,10 +31,33 @@ public class WaveSpawner : MonoBehaviour
 
     void Update()
     {
+        difficultyTime += Time.deltaTime;
+        float difficultyRatio = difficultyTime / difficultyDuration;
+        float spawnDelay = startSpawnDelay + (endSpawnDelay - startSpawnDelay) * difficultyRatio;
         spawnTime -= Time.deltaTime;
         if(spawnTime < 0)
         {
             spawnTime += spawnDelay;
+            float easyWeight = easyWaveCurve.Evaluate(difficultyRatio);
+            float mediumWeight = mediumWaveCurve.Evaluate(difficultyRatio);
+            float hardWeight = hardWaveCurve.Evaluate(difficultyRatio);
+            float easyProbability = easyWeight / (easyWeight + mediumWeight + hardWeight);
+            float mediumProbability = easyProbability + mediumWeight / (easyWeight + mediumWeight + hardWeight);
+            float hardProbability = mediumProbability + mediumWeight / (easyWeight + mediumWeight + hardWeight);
+            float randomValue = Random.value;
+            Wave[] waves = null;
+            if(randomValue < easyProbability)
+            {
+                waves = easyWaves;
+            }
+            else if(randomValue < mediumProbability)
+            {
+                waves = mediumWaves;
+            }
+            else
+            {
+                waves = hardWaves;
+            }
             int waveIndex = Random.Range(0, waves.Length);
             List<Transform> availableSpawnPoints = new List<Transform>();
             for(int i=0; i<spawnPoints.Length; i++)
