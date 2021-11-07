@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166c7e2c5c373d44a95a1d799e74bb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 15
   invincibilityDuration: 0
   deathScore: 10
   deathComboIndex: 4
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtSpawn: {fileID: 4535125878730539003, guid: 80415db4f986b8448809fccfeea666f0, type: 3}
-  deathSpawn: {fileID: 4535125878730539003, guid: 80415db4f986b8448809fccfeea666f0, type: 3}
+  deathSpawn: {fileID: 4535125878730539003, guid: 44fbd232e6fde1545bc2be34010ea7cb, type: 3}
 --- !u!1 &651905425424833209
 GameObject:
   m_ObjectHideFlags: 0
