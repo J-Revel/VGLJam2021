@@ -29,7 +29,7 @@ public class HurtScreenShake : MonoBehaviour
             float intensityRatio = 1 - Mathf.Abs(time / duration * 2 - 1);
             ScreenShake.instance.rotationIntensity = intensityRatio * targetAngle;
             ScreenShake.instance.movementIntensity = new Vector2(intensityRatio * targetDisplacement, intensityRatio * targetDisplacement);
-            PostProcessController.instance.distortion = -Mathf.Sin(time / duration * Mathf.PI) * targetDistortion;
+            PostProcessController.instance.distortion = -Mathf.Sin(time / duration * Mathf.PI * 2) * targetDistortion;
             
             if(time > duration / 2 && !enemiesPushed)
             {
