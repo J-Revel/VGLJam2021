@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b161369e1d27daf4793bc1e817857224, type: 3}
+  m_Name: Vie_Traits
+  m_EditorClassIdentifier: 
+  spriteAnims:
+  - name: Tir
+    spriteAnim:
+      sprites:
+      - {fileID: 21300000, guid: e71c0c5484608c849bbf3379d6d93947, type: 3}
+      - {fileID: 21300000, guid: 477eed4450a827c48a02500c7f818675, type: 3}
+      - {fileID: 21300000, guid: 137d4b4fe12f58549a3d6a146b5ea2d8, type: 3}
+      - {fileID: 21300000, guid: 237adda6f0446694c91c8ce6116586fc, type: 3}
+      - {fileID: 21300000, guid: 31f100172ed6ba44d93926dc4c0d9cbb, type: 3}
+      - {fileID: 21300000, guid: ffeacc309750df24992277bcb3b0c491, type: 3}
+      - {fileID: 21300000, guid: 74cf0047673a22b449127d3b9fc68ae7, type: 3}
+      - {fileID: 21300000, guid: 4e8f041cf270bed44bf98f21f4e1f7e7, type: 3}
+      - {fileID: 21300000, guid: 4c5a3ac397012254883e17baf5f4b65f, type: 3}
+      actionPoints: []
+      framePerSecond: 24
+      loop: 1
+  actionPointNames: []
