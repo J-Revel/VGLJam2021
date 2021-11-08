@@ -15,11 +15,11 @@ public class SpawnOnHurt : MonoBehaviour
 
     private void OnHurt()
     {
-        Instantiate(hurtSpawn, transform.position, Quaternion.AngleAxis(Random.Range(0, 360), Vector3.forward));
+        Instantiate(hurtSpawn, transform.position, Quaternion.AngleAxis(Random.Range(0, 360), Vector3.forward), LevelContainer.instance.transform);
     }
 
     private void OnDeath(Vector2 direction)
     {
-        Instantiate(deathSpawn, transform.position, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, direction), Vector3.forward));
+        Instantiate(deathSpawn, transform.position, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, direction), Vector3.forward), LevelContainer.instance.transform);
     }
 }

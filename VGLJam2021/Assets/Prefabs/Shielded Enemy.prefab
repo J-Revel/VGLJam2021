@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7145784136982575586}
   - component: {fileID: 6677696538662009032}
   - component: {fileID: -8175366255496511477}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shielded Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   escapeRange: 10
   loadDuration: 2
   shootTime: 0
-  angularAcceleration: 6
+  angularAcceleration: 10
   burstCount: 5
   reloadDuration: 2
   shootInterval: 2
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6220680612076650056}
   - component: {fileID: 2149805621661572870}
   - component: {fileID: 7688186668572418879}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4640174757720847910}
   - component: {fileID: 5304257850170670312}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shielded Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8393251077554497118}
   - component: {fileID: 3285751488402952152}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 58923261393139919}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 4845939661349078904}
   - component: {fileID: 1802337701653536186}
   - component: {fileID: 2107766403515638783}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shielded Enemy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6192161223650533341}
   - component: {fileID: 3133071016708900798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4374cc213c2e0c4592017de1f0d00c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4664036524983652435, guid: f98ac2476baa0464db41d98524f1bdd9, type: 3}
+  projectilePrefab: {fileID: 0}
   spawnPoint: {fileID: 8957130400517038476}
   shootType: 0
   shootInterval: 0.3

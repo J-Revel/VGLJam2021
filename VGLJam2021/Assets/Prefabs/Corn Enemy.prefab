@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: -3588864376745207045}
   - component: {fileID: 1859013984381353015}
   - component: {fileID: 7851764668385591255}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Corn Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4725370645087612602}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1345772150958989499}
   - component: {fileID: 5044650741619128784}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4798803184363598319}
   - component: {fileID: 3905987169970924165}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Corn Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -40,7 +40,6 @@ public class ShootingAI : MonoBehaviour
             if(loadTime < loadDuration)
             {
                 loadTime += Time.deltaTime;
-                print(loadTime);
                 if(loadingFX != null && loadTime >= loadDuration)
                     loadingFX.SetActive(false);
                 
@@ -70,7 +69,6 @@ public class ShootingAI : MonoBehaviour
             rigidbody.AddForce(-escapeForce * targetDirection.normalized);
         else
         {
-            
             if(burstIndex == 0 && !loading)
             {
                 loading = true;

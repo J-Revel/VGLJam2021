@@ -14,9 +14,9 @@ TagManager:
   - Player
   - Projectile
   - Static
-  - 
-  - 
-  - 
+  - Player Projectile
+  - Enemy Projectile
+  - Enemy
   - 
   - 
   - 

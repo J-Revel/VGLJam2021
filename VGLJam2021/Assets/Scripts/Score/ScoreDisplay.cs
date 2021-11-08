@@ -16,7 +16,7 @@ public class ScoreDisplay : MonoBehaviour
     public void Update()
     {
         if(currentScore < ScoreSystem.instance.score)
-            currentScore += Time.deltaTime * scoreIncreaseSpeed;
+            currentScore += Time.deltaTime * Mathf.Max(scoreIncreaseSpeed, Mathf.Abs(ScoreSystem.instance.score - currentScore));
         text.text = ((int)currentScore).ToString("00000");
     }
 }

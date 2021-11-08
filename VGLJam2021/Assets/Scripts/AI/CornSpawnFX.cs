@@ -40,7 +40,7 @@ public class CornSpawnFX : MonoBehaviour
         transform.rotation *= Quaternion.AngleAxis(rotationSpeed * Time.deltaTime, Vector3.forward);
         if(ratio > 1)
         {
-            Instantiate(toSpawnAtEnd, startPosition + direction * distance, Quaternion.identity);
+            Instantiate(toSpawnAtEnd, startPosition + direction * distance, Quaternion.identity, LevelContainer.instance.transform);
             Destroy(gameObject);
         }
     }

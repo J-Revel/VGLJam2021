@@ -20,6 +20,6 @@ public class EnemiesPush : MonoBehaviour
                 collider.attachedRigidbody.AddForce(forceDirection.normalized * (minPushForce + (maxPushForce - minPushForce) * (forceDirection.magnitude / range)), ForceMode2D.Impulse);
             }
         }
-        Instantiate(fx, transform.position, transform.rotation);
+        Instantiate(fx, transform.position, transform.rotation, LevelContainer.instance.transform);
     }
 }

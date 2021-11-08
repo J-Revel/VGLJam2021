@@ -42,6 +42,7 @@ public class HurtScreenShake : MonoBehaviour
                 playing = false;
                 ScreenShake.instance.rotationIntensity = 0;
                 ScreenShake.instance.movementIntensity = Vector2.zero;
+                PostProcessController.instance.distortion = 0;
             }
         }
     }

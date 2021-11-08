@@ -50,8 +50,11 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
-        Transform projectile = Instantiate(projectilePrefab, spawnPoint.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward));
-        projectile.gameObject.AddComponent<TeamDataHolder>().team = team;
+        if(projectilePrefab != null)
+        {
+            Transform projectile = Instantiate(projectilePrefab, spawnPoint.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward), LevelContainer.instance.transform);
+            projectile.gameObject.AddComponent<TeamDataHolder>().team = team;
+        }
     }
 
      public float RandomGaussian(float sigma, float mu)

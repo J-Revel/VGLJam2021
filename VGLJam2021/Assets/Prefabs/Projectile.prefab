@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315297286820722887}
   - component: {fileID: 7053498776161975325}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Glow (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 3043267096368160866}
   - component: {fileID: 7590937215013365027}
   - component: {fileID: 1115846851260516919}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Projetctile interieur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 8939262540994527414}
   - component: {fileID: 6664113998360407660}
   - component: {fileID: 892296453753318243}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -287,7 +287,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.01
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -486,7 +486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125636017502941663}
   - component: {fileID: 5331824768489752895}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 3535429307523837312}
   - component: {fileID: 3794457326739856880}
   - component: {fileID: 8433106569529935763}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 7063651301146758217}
   - component: {fileID: 3975645536059914395}
   - component: {fileID: 4819034747764776131}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: trail (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5473,7 +5473,7 @@ GameObject:
   - component: {fileID: 3609916078537484327}
   - component: {fileID: 4843538831731719764}
   - component: {fileID: 3800085230820288578}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: trail (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

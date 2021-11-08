@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         
         if(otherTeamDataHolder == null)
         {
-            Instantiate(impactFx, collision.contacts[0].point, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, collision.contacts[0].normal), Vector3.forward));
+            Instantiate(impactFx, collision.contacts[0].point, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, collision.contacts[0].normal), Vector3.forward), LevelContainer.instance.transform);
             Destroy(gameObject);
         }
         else if(otherTeamDataHolder.team != teamDataHolder.team)

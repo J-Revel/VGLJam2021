@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1783514904916720521}
   - component: {fileID: 8930757677730816151}
   - component: {fileID: -5743505653767070520}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Corn Enemy Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

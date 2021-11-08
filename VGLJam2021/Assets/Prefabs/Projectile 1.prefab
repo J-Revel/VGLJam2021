@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7289291099872429885}
   - component: {fileID: 3779816743754455618}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Glow (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 156802161830676430}
   - component: {fileID: 1187131879314210827}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Glow (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 3640600286030836145}
   - component: {fileID: 8260779684178684986}
   - component: {fileID: 8154395689491991553}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Centre (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 4664036524983652434}
   - component: {fileID: 2532203373344731867}
   - component: {fileID: 1900491385451308912}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Projectile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 4362220792997515727}
   - component: {fileID: 8095452810579297720}
   - component: {fileID: 9167412332525856819}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 3313149848579433311}
   - component: {fileID: 4895364705810435773}
   - component: {fileID: 5069148603607637872}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139988917585534037}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Blum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   - component: {fileID: 5233932954559273047}
   - component: {fileID: 1094649637420545929}
   - component: {fileID: 8816686634045186875}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: trail (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

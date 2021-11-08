@@ -47,6 +47,7 @@ public class PlayerDeathAnimation : MonoBehaviour
         ScreenShake.instance.enabled = false;
         PlayerController.instance.GetComponent<AnimatedSprite>().SelectAnim("Die");
         PlayerController.instance.enabled = false;
+        PlayerController.instance.GetComponentInChildren<Weapon>().enabled = false;
         Rigidbody2D rigidbody = PlayerController.instance.GetComponent<Rigidbody2D>();
         rigidbody.isKinematic = true;
         rigidbody.velocity = Vector2.zero;

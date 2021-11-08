@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -6854323513529220409}
   - component: {fileID: 6841761237853295502}
   - component: {fileID: 6744019206101109405}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Corn Enemy Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3135753431737030866}
   - component: {fileID: 6789893120927471506}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
