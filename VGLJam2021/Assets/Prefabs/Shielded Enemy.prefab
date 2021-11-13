@@ -127,7 +127,7 @@ MonoBehaviour:
   escapeRange: 10
   loadDuration: 2
   shootTime: 0
-  angularAcceleration: 10
+  angularAcceleration: 100
   burstCount: 5
   reloadDuration: 2
   shootInterval: 2
