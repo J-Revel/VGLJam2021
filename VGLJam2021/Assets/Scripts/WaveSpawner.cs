@@ -19,6 +19,7 @@ public class WaveSpawner : MonoBehaviour
     public Transform[] spawnPoints;
     public float startSpawnDelay = 5;
     public float endSpawnDelay = 2;
+    public float minSpawnDelay = 1;
     public float endSpawnTime = 60;
     public float spawnTime = 10;
     public Transform spawnParent;
@@ -35,7 +36,7 @@ public class WaveSpawner : MonoBehaviour
         difficultyTime += Time.deltaTime;
         float difficultyRatio = difficultyTime / difficultyDuration;
         float spawnTimeRatio = Mathf.Max(0, (difficultyTime - difficultyDuration) / endSpawnTime);
-        float spawnDelay = startSpawnDelay + (endSpawnDelay - startSpawnDelay) * spawnTimeRatio;
+        float spawnDelay = startSpawnDelay + Mathf.Max(minSpawnDelay, (endSpawnDelay - startSpawnDelay) * spawnTimeRatio);
         spawnTime -= Time.deltaTime;
         if(spawnTime < 0)
         {

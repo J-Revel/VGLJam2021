@@ -249,6 +249,8 @@ MonoBehaviour:
   invincibilityDuration: 0.5
   deathScore: 0
   deathComboIndex: 0
+  bonusEffect: {fileID: 0}
+  deathBonusColor: {r: 0, g: 0, b: 0, a: 0}
   destroyOnDeath: 0
 --- !u!114 &491464905
 MonoBehaviour:
@@ -493,7 +495,7 @@ Transform:
   m_GameObject: {fileID: 3062698657800666292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3062698656785438512}
   m_RootOrder: 0

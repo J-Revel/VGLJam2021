@@ -540,10 +540,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -835,7 +835,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4936101907965622870}
   - component: {fileID: 4936101907965622952}
-  - component: {fileID: 4936101907965622871}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -873,27 +872,8 @@ MonoBehaviour:
   target: {fileID: 4936101908398805534}
   targetOffset: {x: 0, y: 0, z: 0}
   force: 200
---- !u!50 &4936101907965622871
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4936101907965622954}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 50
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  closeRange: 5
+  drag: 0.001
 --- !u!1 &4936101908195807723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,6 +1106,7 @@ MonoBehaviour:
   - {fileID: 1097829247}
   startSpawnDelay: 5
   endSpawnDelay: 2
+  minSpawnDelay: 1
   endSpawnTime: 1
   spawnTime: 0
   spawnParent: {fileID: 3341880865730028042}
