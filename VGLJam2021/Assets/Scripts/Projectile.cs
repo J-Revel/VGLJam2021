@@ -42,6 +42,7 @@ public class Projectile : MonoBehaviour
             if(bumper != null)
             {
                 transform.rotation = normalAngle * Quaternion.AngleAxis(Vector2.SignedAngle(-transform.right, normal), Vector3.forward);
+                bumper.PlayBounceAnim();
             }
             else
             {

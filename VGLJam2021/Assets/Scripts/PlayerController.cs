@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public Transform dashFXPrefab;
     public int dashFXCount = 5;
     public AudioSource dashAudioSource;
+    
 
     void Awake()
     {
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        MusicPlayer.instance.transform.position = transform.position;
         if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
         {
             animatedSprite.SelectAnim("Walk");
