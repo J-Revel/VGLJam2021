@@ -470,6 +470,9 @@ MonoBehaviour:
   shootInterval: 0.1
   precision: 5
   team: 0
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &3062698657800666292
 GameObject:
   m_ObjectHideFlags: 0

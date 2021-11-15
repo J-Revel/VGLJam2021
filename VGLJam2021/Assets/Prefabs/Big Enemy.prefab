@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7145784136982575586}
   - component: {fileID: 1405517225}
   - component: {fileID: 2903733854051602738}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Big Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8957130400517038476}
   - component: {fileID: 6220680612076650056}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3109935494301887963}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 5815350152263057837}
   - component: {fileID: 2848089804342387836}
   - component: {fileID: 8375248730000402530}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6192161223650533341}
   - component: {fileID: 3133071016708900798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,6 +426,9 @@ MonoBehaviour:
   shootInterval: 0.3
   precision: 10
   team: 1
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!1 &6650973959566363507
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +441,7 @@ GameObject:
   - component: {fileID: 5882024482035152718}
   - component: {fileID: 9176465112121373572}
   - component: {fileID: 923911485631176691}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Big Enemy (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5087603294732938188}
   - component: {fileID: 4043562471433647239}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Big Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,9 +603,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3109935494301887963}
     m_Modifications:
+    - target: {fileID: 2123217377430550223, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406125246579866487, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4664036524983652433, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
       propertyPath: m_Name
       value: Projectile 1_Warmup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664036524983652433, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4664036524983652435, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
       propertyPath: m_RootOrder
@@ -647,6 +662,10 @@ PrefabInstance:
     - target: {fileID: 4664036524983652435, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627798412797506169, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f7893e7a75511848a32c9f2e5aa6234, type: 3}

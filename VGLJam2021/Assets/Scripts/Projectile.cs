@@ -7,7 +7,6 @@ public enum Team
     Player, Enemy, Neutral,
 }
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
     public float speed;
@@ -16,23 +15,38 @@ public class Projectile : MonoBehaviour
     public TeamDataHolder teamDataHolder;
     public Transform impactFx;
     public LayerMask impactLayer;
+    public float minVelocityRatio = 0.3f;
+    public Transform bouncePrefab;
+    public LayerMask collisionLayer;
     
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = speed * transform.right;
         teamDataHolder = GetComponent<TeamDataHolder>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+
+    private void OnCollisionWith(Collider2D otherCollider, Vector2 contactPoint, Vector2 normal)
     {
-        Health health = collision.collider.GetComponent<Health>();
-        TeamDataHolder otherTeamDataHolder = collision.collider.GetComponent<TeamDataHolder>();
-        Rigidbody2D otherRigidbody = collision.collider.GetComponentInParent<Rigidbody2D>();
+        Health health = otherCollider.GetComponent<Health>();
+        TeamDataHolder otherTeamDataHolder = otherCollider.GetComponent<TeamDataHolder>();
+        Rigidbody2D otherRigidbody = otherCollider.GetComponentInParent<Rigidbody2D>();
+        Bumper bumper = otherCollider.GetComponent<Bumper>();
         
         if(otherTeamDataHolder == null)
         {
-            Instantiate(impactFx, collision.contacts[0].point, Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, collision.contacts[0].normal), Vector3.forward), LevelContainer.instance.transform);
-            Destroy(gameObject);
+            transform.position = contactPoint + normal * 0.01f;
+            Quaternion normalAngle = Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, normal), Vector3.forward);
+            Instantiate(impactFx, contactPoint, normalAngle, LevelContainer.instance.transform);
+            
+            if(bumper != null)
+            {
+                transform.rotation = normalAngle * Quaternion.AngleAxis(Vector2.SignedAngle(-transform.right, normal), Vector3.forward);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         else if(otherTeamDataHolder.team != teamDataHolder.team)
         {
@@ -50,6 +64,21 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        
+        float distance = speed * Time.deltaTime;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, distance, collisionLayer);
+        if(hit.collider != null)
+        {
+            distance = hit.distance;
+            
+            OnCollisionWith(hit.collider, hit.point, hit.normal);
+        }
+        else
+        {
+            transform.position += transform.right * distance;
+        }
+        // if(rigidbody.velocity.sqrMagnitude < minVelocityRatio * minVelocityRatio * speed * speed)
+        // {
+        //     Destroy(gameObject);
+        // }
     }
 }

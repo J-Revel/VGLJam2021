@@ -1107,10 +1107,10 @@ MonoBehaviour:
   startSpawnDelay: 5
   endSpawnDelay: 2
   minSpawnDelay: 1
-  endSpawnTime: 1
+  endSpawnTime: 60
   spawnTime: 0
   spawnParent: {fileID: 3341880865730028042}
-  difficultyDuration: 1
+  difficultyDuration: 120
 --- !u!1 &4936101908272649733
 GameObject:
   m_ObjectHideFlags: 0

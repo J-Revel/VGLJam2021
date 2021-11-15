@@ -273,9 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4664036524983652435}
   - component: {fileID: 4664036524983652432}
-  - component: {fileID: 4664036524983652437}
   - component: {fileID: 4664036524983652434}
-  - component: {fileID: 2532203373344731867}
   - component: {fileID: 1900491385451308912}
   m_Layer: 10
   m_Name: Projectile 1
@@ -356,27 +354,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &4664036524983652437
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4664036524983652433}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &4664036524983652434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,23 +373,12 @@ MonoBehaviour:
   impactFx: {fileID: 4664036524983652435, guid: 02ad45af2dc03e648b512184956e9af8, type: 3}
   impactLayer:
     serializedVersion: 2
-    m_Bits: 0
---- !u!58 &2532203373344731867
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4664036524983652433}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
+    m_Bits: 1
+  minVelocityRatio: 0.3
+  bouncePrefab: {fileID: 4664036524983652435}
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 65
 --- !u!114 &1900491385451308912
 MonoBehaviour:
   m_ObjectHideFlags: 0

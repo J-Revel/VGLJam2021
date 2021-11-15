@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     private float shootTime = 0;
     public float precision = 10;
     public Team team;
+    public LayerMask collisionLayer;
 
     void Start()
     {
@@ -52,7 +53,12 @@ public class Weapon : MonoBehaviour
     {
         if(projectilePrefab != null)
         {
-            Transform projectile = Instantiate(projectilePrefab, spawnPoint.position, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward), LevelContainer.instance.transform);
+            Vector3 direction = spawnPoint.position - transform.position;
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, direction.magnitude, collisionLayer);
+            Vector3 spawnPosition = spawnPoint.position;
+            if(hit.collider != null)
+                spawnPosition = transform.position;
+            Transform projectile = Instantiate(projectilePrefab, spawnPosition, transform.rotation * Quaternion.AngleAxis(RandomGaussian(0.2f, 0) * precision, Vector3.forward), LevelContainer.instance.transform);
             projectile.gameObject.AddComponent<TeamDataHolder>().team = team;
         }
     }
