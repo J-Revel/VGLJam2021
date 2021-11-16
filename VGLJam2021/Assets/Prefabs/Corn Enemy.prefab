@@ -57,7 +57,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 15
   invincibilityDuration: 0
-  deathScore: 10
+  deathScore: 30
   deathComboIndex: 4
   bonusEffect: {fileID: 2193367353901254716, guid: 318a7bdce2dac8140afa60e2a3565f15, type: 3}
   deathBonusColor: {r: 1, g: 1, b: 1, a: 0}

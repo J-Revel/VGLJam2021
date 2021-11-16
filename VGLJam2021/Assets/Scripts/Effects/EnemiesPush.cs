@@ -21,5 +21,6 @@ public class EnemiesPush : MonoBehaviour
             }
         }
         Instantiate(fx, transform.position, transform.rotation, LevelContainer.instance.transform);
+        PlayerController.instance.RepulseProjectiles();
     }
 }

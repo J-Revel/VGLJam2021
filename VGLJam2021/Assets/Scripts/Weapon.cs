@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
     public float precision = 10;
     public Team team;
     public LayerMask collisionLayer;
+    public bool isPlayer = false;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
+        if(!isPlayer) return;
+        
         switch(shootType)
         {
             case ShootType.SemiAuto:

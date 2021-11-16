@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public Transform dashFXPrefab;
     public int dashFXCount = 5;
     public AudioSource dashAudioSource;
+    public float projectileRepulsionDuration = 0.3f;
+    public float projectileRepulsionRange = 0.3f;
+    private float projectileRepulsionTime = 0;
     
 
     void Awake()
@@ -35,6 +38,13 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody.velocity = (Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")) * movementSpeed;
         
+    }
+
+    public bool projectileRepulsionActive { get { return projectileRepulsionTime > 0; } }
+
+    public void RepulseProjectiles() 
+    {
+        projectileRepulsionTime = projectileRepulsionDuration;
     }
 
     void Update()
@@ -73,5 +83,9 @@ public class PlayerController : MonoBehaviour
         float targetDistance = Vector3.Distance(targetPosition, transform.position);
         Vector3 targetDirection = (targetPosition-transform.position).normalized;
         cameraTarget.transform.position = transform.position + targetDirection * Mathf.Min(maxTargetDistance, targetDistance * targetDistanceRatio);
+        if(projectileRepulsionTime > 0)
+        {
+            projectileRepulsionTime -= Time.deltaTime;
+        }
     }
 }

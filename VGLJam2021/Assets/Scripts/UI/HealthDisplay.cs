@@ -17,9 +17,11 @@ public class HealthDisplay : MonoBehaviour
     {
         health = PlayerController.instance.GetComponent<Health>();
         health.hurtDelegate += OnHurt;
+        health.deathDelegate += OnDeath;
         for(int i=0; i<maxHealth; i++)
         {
-            Image img = Instantiate(counterPrefab, transform.position + i * offset * Vector3.right, Quaternion.identity, transform);
+            Image img = Instantiate(counterPrefab, transform.position, Quaternion.identity, transform);
+            img.GetComponent<RectTransform>().anchoredPosition = i * offset * Vector3.right;
             img.sprite = health.health > i ? onSprite : offSprite;
             images.Add(img);
         }
@@ -31,5 +33,10 @@ public class HealthDisplay : MonoBehaviour
         {
             images[i].sprite = health.health > i ? onSprite : offSprite;
         }
+    }
+
+    private void OnDeath(Vector2 direction)
+    {
+        OnHurt();
     }
 }

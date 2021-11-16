@@ -77,6 +77,10 @@ public class Projectile : MonoBehaviour
         {
             transform.position += transform.right * distance;
         }
+        if(PlayerController.instance.projectileRepulsionActive)
+        {
+            transform.rotation = Quaternion.AngleAxis(180 + Vector2.SignedAngle(Vector2.right, PlayerController.instance.transform.position - transform.position), Vector3.forward);
+        }
         // if(rigidbody.velocity.sqrMagnitude < minVelocityRatio * minVelocityRatio * speed * speed)
         // {
         //     Destroy(gameObject);

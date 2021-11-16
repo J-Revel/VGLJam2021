@@ -154,6 +154,8 @@ MonoBehaviour:
   dashFXPrefab: {fileID: 4244755575905797275, guid: 00d26e649bfd6354c869e48fd29a6968, type: 3}
   dashFXCount: 10
   dashAudioSource: {fileID: 1443984093796515327}
+  projectileRepulsionDuration: 0.3
+  projectileRepulsionRange: 10
 --- !u!50 &3062698656785438514
 Rigidbody2D:
   serializedVersion: 4
@@ -245,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166c7e2c5c373d44a95a1d799e74bb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 9
   invincibilityDuration: 0.5
   deathScore: 0
   deathComboIndex: 0
@@ -473,6 +475,7 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 2049
+  isPlayer: 1
 --- !u!1 &3062698657800666292
 GameObject:
   m_ObjectHideFlags: 0

@@ -127,7 +127,7 @@ MonoBehaviour:
   escapeRange: 10
   loadDuration: 2
   shootTime: 0
-  angularAcceleration: 40
+  angularAcceleration: 200
   burstCount: 5
   reloadDuration: 2
   shootInterval: 2
@@ -592,3 +592,7 @@ MonoBehaviour:
   shootInterval: 0.3
   precision: 10
   team: 1
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isPlayer: 0

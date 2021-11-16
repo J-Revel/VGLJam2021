@@ -28,8 +28,10 @@ public class ShootingAI : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
     
-    void Update()
+    void FixedUpdate()
     {
+        if(PlayerController.instance == null)
+            return;
         Vector3 targetPosition = PlayerController.instance.transform.position;
         Vector3 targetDirection = targetPosition - transform.position;
         float targetDistance = targetDirection.sqrMagnitude;
@@ -79,7 +81,7 @@ public class ShootingAI : MonoBehaviour
         if(burstIndex >= burstCount)
         {
             loading = false;
-            reloadTime += Time.deltaTime;
+            reloadTime += Time.fixedDeltaTime;
             if(reloadTime > reloadDuration)
             {
                 reloadTime = 0;

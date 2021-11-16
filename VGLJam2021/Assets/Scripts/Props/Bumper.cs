@@ -28,6 +28,7 @@ public class Bumper : MonoBehaviour
     {
         animTime = animDuration;
         bumpSource.clip = randomSound.clips[Random.Range(0, randomSound.clips.Length)];
+        bumpSource.volume = 1 - Mathf.Clamp((Vector3.Distance(transform.position, PlayerController.instance.transform.position) - 20) / 20, 0, 1);
         bumpSource.Play();
     }
 
@@ -52,6 +53,7 @@ public class Bumper : MonoBehaviour
             contact.rigidbody?.AddForce(force, ForceMode2D.Impulse);
             animTime = animDuration;
             bumpSource.clip = randomSound.clips[Random.Range(0, randomSound.clips.Length)];
+            bumpSource.volume = 1 - Mathf.Clamp((Vector3.Distance(transform.position, PlayerController.instance.transform.position) - 20) / 20, 0, 1);
             bumpSource.Play();
         }
         contacts.Clear();
