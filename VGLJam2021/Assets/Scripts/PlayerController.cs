@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     public float projectileRepulsionDuration = 0.3f;
     public float projectileRepulsionRange = 0.3f;
     private float projectileRepulsionTime = 0;
+
+    private string vAxis;
+    private string hAxis;
     
 
     void Awake()
@@ -32,11 +35,19 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        vAxis = TranslateService.instance.Translate("axis_v");
+        hAxis = TranslateService.instance.Translate("axis_h");
+    }
+
+    private void OnLanguageChange()
+    {
+        vAxis = TranslateService.instance.Translate("axis_v");
+        hAxis = TranslateService.instance.Translate("axis_h");
     }
 
     void FixedUpdate()
     {
-        rigidbody.velocity = (Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")) * movementSpeed;
+        rigidbody.velocity = (Vector3.right * Input.GetAxis(hAxis) + Vector3.up * Input.GetAxis(vAxis)) * movementSpeed;
         
     }
 
@@ -50,7 +61,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MusicPlayer.instance.transform.position = transform.position;
-        if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
+        if(Mathf.Abs(Input.GetAxis(hAxis)) > 0.1f || Mathf.Abs(Input.GetAxis(vAxis)) > 0.1f)
         {
             animatedSprite.SelectAnim("Walk");
         }
@@ -58,7 +69,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Dash"))
         {
             dashAudioSource.Play();
-            Vector2 inputDirection = ((Vector3.right * Input.GetAxis("Horizontal") + Vector3.up * Input.GetAxis("Vertical")).normalized);
+            Vector2 inputDirection = ((Vector3.right * Input.GetAxis(hAxis) + Vector3.up * Input.GetAxis(vAxis)).normalized);
             RaycastHit2D hit = Physics2D.Raycast(rigidbody.position, inputDirection, dashDistance, raycastLayer);
             Vector2 dashDirection = Vector3.zero;
             if(hit && hit.distance > 0)

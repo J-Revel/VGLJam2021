@@ -37,6 +37,8 @@ public class SnapScrollbox : MonoBehaviour, IEndDragHandler, IDragHandler
         dragging = false;
     }
 
+    
+
     private float currentViewCenter 
     { 
         get 
