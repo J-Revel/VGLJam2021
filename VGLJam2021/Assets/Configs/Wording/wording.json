@@ -1,0 +1,22 @@
+{
+    "fr": {
+        "tuto1": "LES GUMES ESSAYENT D'ENVAHIR LA SALLE D'ARCADE ! MAIS ILS N'ONT PAS PENSE AU PUISSANT CHAT-MALLOW, QUI FERA TOUT POUR LES REDUIRE EN BOUILLIE !",
+        "tuto2": "CHAQUE ENNEMI RAPPORTE DES POINTS. TUEZ PLUSIEURS ENNEMIS DU MEME TYPE A LA SUITE POUR CUMULER DES MULTIPLICATEURS DE SCORE !",
+        "left": "Q",
+        "right": "D",
+        "up": "Z",
+        "down": "S",
+        "axis_h": "fr_horizontal",
+        "axis_v": "fr_vertical"
+    },
+    "eng": {
+        "tuto1": "VEGGIES ARE TRYING TO INVADE THE ARCADE ROOM ! BUT [INSERT HERO NAME HERE] IS HERE TO KICK THEM OUT !",
+        "tuto2": "ENEMIES GIVE YOU POINTS. KILL MULTIPLE ENEMIES OF THE SAME KIND TO INCREASE YOUR SCORE MULTIPLIER !",
+        "left": "A",
+        "right": "D",
+        "up": "W",
+        "down": "S",
+        "axis_h": "eng_horizontal",
+        "axis_v": "eng_vertical"
+    }
+}
