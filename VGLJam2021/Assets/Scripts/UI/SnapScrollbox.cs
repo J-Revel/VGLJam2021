@@ -17,14 +17,17 @@ public class SnapScrollbox : MonoBehaviour, IEndDragHandler, IDragHandler
     public float dragOffsetScale = 2;
     public bool scrollToTarget;
     public int teleportValue = 0;
-    private bool mustTeleport = false;
+    private bool mustTeleport = true;
 
     private float dragStartValue;
     private int currentTargetIndex;
+    public GameObject nextButton;
+    public GameObject previousButton;
 
     void Start()
     {
         scrollRect = GetComponent<ScrollRect>();
+        UpdateButtonsVisibility();
     }
 
     public void OnDrag(PointerEventData data)
@@ -140,6 +143,7 @@ public class SnapScrollbox : MonoBehaviour, IEndDragHandler, IDragHandler
             {
                 targetValue = PositionToScrollValue(closestElementPos);
                 currentTargetIndex = closestElementIndex;
+                UpdateButtonsVisibility();
             }
             if(!dragging)
             {
@@ -160,6 +164,7 @@ public class SnapScrollbox : MonoBehaviour, IEndDragHandler, IDragHandler
         currentTargetIndex++;
         if(currentTargetIndex >= scrollRect.content.childCount)
             currentTargetIndex = scrollRect.content.childCount - 1;
+        UpdateButtonsVisibility();
         RectTransform childRect = scrollRect.content.GetChild(currentTargetIndex).GetComponent<RectTransform>();
         float childMinPos = childRect.anchoredPosition.x + childRect.rect.xMin;
         float childMaxPos = childRect.anchoredPosition.x + childRect.rect.xMax;
@@ -172,10 +177,19 @@ public class SnapScrollbox : MonoBehaviour, IEndDragHandler, IDragHandler
         currentTargetIndex--;
         if(currentTargetIndex < 0)
             currentTargetIndex = 0;
+        UpdateButtonsVisibility();
         RectTransform childRect = scrollRect.content.GetChild(currentTargetIndex).GetComponent<RectTransform>();
         float childMinPos = childRect.anchoredPosition.x + childRect.rect.xMin;
         float childMaxPos = childRect.anchoredPosition.x + childRect.rect.xMax;
         float childCenterPos = (childMinPos + childMaxPos) / 2;
         targetValue = PositionToScrollValue(childCenterPos);
+    }
+
+    private void UpdateButtonsVisibility()
+    {
+        if(previousButton != null)
+            previousButton.SetActive(currentTargetIndex > 0);
+        if(nextButton != null)
+            nextButton.SetActive(currentTargetIndex < scrollRect.content.childCount - 1);
     }
 }

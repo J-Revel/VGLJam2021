@@ -27,7 +27,7 @@ public class LanguageSelector : MonoBehaviour
 
     public void SelectLanguage()
     {
-        if(toggle.isOn)
+        if(toggle != null && toggle.isOn)
             TranslateService.instance.SelectLanguage(language);
     }
 
