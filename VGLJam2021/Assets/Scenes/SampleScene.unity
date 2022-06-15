@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 4900000, guid: bab566be0a42e1c4b8fce6ae248b3bc3, type: 3}
+  langIndex: 0
 --- !u!4 &135955661
 Transform:
   m_ObjectHideFlags: 0
