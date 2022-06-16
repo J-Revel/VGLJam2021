@@ -18,9 +18,10 @@ public class MenuSpawner : MonoBehaviour
         SpawnMenu(startMenu);
     }
 
-    public void SpawnMenu(GameObject menu)
+    public GameObject SpawnMenu(GameObject menu)
     {
         currentMenu = Instantiate(menu, transform);
+        return currentMenu;
     }
 
     public void CloseMenu()
