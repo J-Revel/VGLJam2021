@@ -38,14 +38,13 @@ public class LeaderboardMenu : MonoBehaviour
     public int pageIndex;
     public GameObject loadingScreen;
     public Transform mainContainer;
-
-    public Button nextPageButton;
-    public Button previousPageButton;
     public int pageCount = 0;
     private int scoreId = -1;
 
     public int tempScore;
     public string tempUsername;
+
+    public bool showTop = false;
 
     IEnumerator Start()
     {
@@ -56,8 +55,6 @@ public class LeaderboardMenu : MonoBehaviour
             lines[i] = Instantiate(linePrefab, mainContainer);
             lines[i].index = i;
         }
-        nextPageButton.onClick.AddListener(ShowNextPage);
-        previousPageButton.onClick.AddListener(ShowPreviousPage);
         yield return UpdateDisplay();
     }
 
@@ -68,12 +65,12 @@ public class LeaderboardMenu : MonoBehaviour
             lines[i].Clear();
         int scoreId = PlayerPrefs.GetInt("scoreId", -1);
         WWWForm form = new WWWForm();
-        form.AddField("pageIndex", pageIndex);
+        form.AddField("pageIndex", 0);
         form.AddField("pageSize", pageSize);
         form.AddField("tempId", scoreId);
         form.AddField("tempScore", tempScore);
         form.AddField("tempUsername", tempUsername);
-        UnityWebRequest webRequest = UnityWebRequest.Post("http://webservice.guilloteam.fr/score/page/",  form);
+        UnityWebRequest webRequest = UnityWebRequest.Post("http://webservice.guilloteam.fr/score/" + (showTop ? "page/" : "around/"),  form);
         yield return webRequest.SendWebRequest();
         loadingScreen.SetActive(false);
         switch (webRequest.result)
@@ -87,8 +84,6 @@ public class LeaderboardMenu : MonoBehaviour
                     lines[i].highlighted = requestResult.data.scores[i].id == scoreId;
                 }
                 pageCount = requestResult.data.pageCount;
-                previousPageButton.gameObject.SetActive(pageIndex > 0);
-                nextPageButton.gameObject.SetActive(pageIndex < pageCount - 1);
                 break;
             default:
                 Debug.Log("Error: " + webRequest.error);
@@ -96,15 +91,15 @@ public class LeaderboardMenu : MonoBehaviour
         }
     }
 
-    public void ShowNextPage()
+    public void ShowTop()
     {
-        pageIndex++;
+        showTop = true;
         StartCoroutine(UpdateDisplay());
     }
 
-    public void ShowPreviousPage()
+    public void ShowMyScore()
     {
-        pageIndex--;
+        showTop = false;
         StartCoroutine(UpdateDisplay());
     }
 }
