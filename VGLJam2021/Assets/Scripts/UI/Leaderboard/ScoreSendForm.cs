@@ -7,7 +7,6 @@ public class ScoreSendForm : MonoBehaviour
 {
     public TMPro.TMP_InputField inputField;
     public TMPro.TextMeshProUGUI scoreText;
-    public int score;
     public LeaderboardMenu leaderboardMenuPrefab;
     
     void Start()
@@ -17,7 +16,8 @@ public class ScoreSendForm : MonoBehaviour
 
     private void Update()
     {
-        scoreText.text = "" + score;
+        if(scoreText != null)
+            scoreText.text = "" + ScoreSystem.instance.score;
     }
 
     public void SendScore()
@@ -32,7 +32,7 @@ public class ScoreSendForm : MonoBehaviour
         string username = inputField.text;
         form.AddField("username", username);
         form.AddField("id", scoreId);
-        form.AddField("score", score);
+        form.AddField("score", ScoreSystem.instance.score);
         string requestPath = "http://webservice.guilloteam.fr/score/add/";
         if(scoreId >= 0)
         {
@@ -52,7 +52,7 @@ public class ScoreSendForm : MonoBehaviour
                 MenuSpawner.instance.CloseMenu();
                 LeaderboardMenu spawnedMenu = MenuSpawner.instance.SpawnMenu(leaderboardMenuPrefab.gameObject).GetComponent<LeaderboardMenu>();
                 spawnedMenu.pageIndex = rank / spawnedMenu.pageSize;
-                spawnedMenu.tempScore = score;
+                spawnedMenu.tempScore = ScoreSystem.instance.score;
                 spawnedMenu.tempUsername = username;
                 break;
         }

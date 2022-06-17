@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using SimpleJSON;
 
 [System.Serializable]
 public struct RequestResult<T>
@@ -76,14 +77,23 @@ public class LeaderboardMenu : MonoBehaviour
         switch (webRequest.result)
         {
             case UnityWebRequest.Result.Success:
-                RequestResult<LeaderboardRequestResult> requestResult = JsonUtility.FromJson<RequestResult<LeaderboardRequestResult>>(webRequest.downloadHandler.text);
-                
-                for(int i=0; i<Mathf.Min(lines.Length, requestResult.data.scores.Length); i++)
+                JSONNode root = JSON.Parse(webRequest.downloadHandler.text);
+                if(root["success"].AsBool)
                 {
-                    lines[i].leaderboardEntry = requestResult.data.scores[i];
-                    lines[i].highlighted = requestResult.data.scores[i].id == scoreId;
+                    RequestResult<LeaderboardRequestResult> requestResult = JsonUtility.FromJson<RequestResult<LeaderboardRequestResult>>(webRequest.downloadHandler.text);
+                    
+                    for(int i=0; i<Mathf.Min(lines.Length, requestResult.data.scores.Length); i++)
+                    {
+                        lines[i].leaderboardEntry = requestResult.data.scores[i];
+                        lines[i].highlighted = requestResult.data.scores[i].id == scoreId;
+                    }
+                    pageCount = requestResult.data.pageCount;
                 }
-                pageCount = requestResult.data.pageCount;
+                else
+                {
+                    Debug.LogError("Request Error : " + root["error"]);
+                }
+                
                 break;
             default:
                 Debug.Log("Error: " + webRequest.error);
