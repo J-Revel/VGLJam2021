@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.Security.Cryptography;
+using System.Text;
 
 public class ScoreSendForm : MonoBehaviour
 {
     public TMPro.TMP_InputField inputField;
     public TMPro.TextMeshProUGUI scoreText;
     public LeaderboardMenu leaderboardMenuPrefab;
-    
-    void Start()
+
+    private void Start()
     {
-        
+        inputField.text = PlayerPrefs.GetString("username", "");
     }
 
     private void Update()
@@ -32,11 +34,16 @@ public class ScoreSendForm : MonoBehaviour
         string username = inputField.text;
         form.AddField("username", username);
         form.AddField("id", scoreId);
-        form.AddField("score", ScoreSystem.instance.score);
-        string requestPath = "http://webservice.guilloteam.fr/score/add/";
+        EncryptionResult encryptedScore = EncryptionService.Encrypt(Encoding.UTF8.GetBytes(ScoreSystem.instance.score.ToString()));
+        form.AddField("score", System.Convert.ToBase64String(encryptedScore.data));
+        form.AddField("iv", System.Convert.ToBase64String(encryptedScore.iv));
+        form.AddField("project", EncryptionService.projectId);
+        
+
+        string requestPath = "https://webservice.guilloteam.fr/score/add/";
         if(scoreId >= 0)
         {
-            requestPath = "http://webservice.guilloteam.fr/score/update/";
+            requestPath = "https://webservice.guilloteam.fr/score/update/";
         }
         UnityWebRequest webRequest = UnityWebRequest.Post(requestPath,  form);
         
@@ -44,11 +51,16 @@ public class ScoreSendForm : MonoBehaviour
         switch (webRequest.result)
         {
             case UnityWebRequest.Result.Success:
+                Debug.Log(webRequest.downloadHandler.text);
                 SimpleJSON.JSONNode rootNode = SimpleJSON.JSON.Parse(webRequest.downloadHandler.text);
                 int rank = rootNode["data"]["rank"];
                 int id = rootNode["data"]["id"];
-                if(scoreId < 0)
+                if(scoreId >= 0)
+                {
                     PlayerPrefs.SetInt("scoreId", id);
+                    PlayerPrefs.SetString("username", username);
+                }
+                PlayerPrefs.Save();
                 MenuSpawner.instance.CloseMenu();
                 LeaderboardMenu spawnedMenu = MenuSpawner.instance.SpawnMenu(leaderboardMenuPrefab.gameObject).GetComponent<LeaderboardMenu>();
                 spawnedMenu.pageIndex = rank / spawnedMenu.pageSize;

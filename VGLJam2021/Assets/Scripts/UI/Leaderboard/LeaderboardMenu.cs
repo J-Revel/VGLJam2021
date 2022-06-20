@@ -20,6 +20,7 @@ public struct LeaderboardEntry
     public int rank;
     public string username;
     public int score;
+    public LeaderboardEntryType type;
 }
 
 [System.Serializable]
@@ -71,7 +72,8 @@ public class LeaderboardMenu : MonoBehaviour
         form.AddField("tempId", scoreId);
         form.AddField("tempScore", tempScore);
         form.AddField("tempUsername", tempUsername);
-        UnityWebRequest webRequest = UnityWebRequest.Post("http://webservice.guilloteam.fr/score/" + (showTop ? "page/" : "around/"),  form);
+        form.AddField("project", EncryptionService.projectId);
+        UnityWebRequest webRequest = UnityWebRequest.Post("https://webservice.guilloteam.fr/score/" + (showTop ? "page/" : "around/"),  form);
         yield return webRequest.SendWebRequest();
         loadingScreen.SetActive(false);
         switch (webRequest.result)
@@ -80,14 +82,32 @@ public class LeaderboardMenu : MonoBehaviour
                 JSONNode root = JSON.Parse(webRequest.downloadHandler.text);
                 if(root["success"].AsBool)
                 {
-                    RequestResult<LeaderboardRequestResult> requestResult = JsonUtility.FromJson<RequestResult<LeaderboardRequestResult>>(webRequest.downloadHandler.text);
-                    
-                    for(int i=0; i<Mathf.Min(lines.Length, requestResult.data.scores.Length); i++)
+                    JSONArray scoresArrayJson = root["data"]["scores"].AsArray;
+                    for(int i=0; i<Mathf.Min(lines.Length, scoresArrayJson.Count); i++)
                     {
-                        lines[i].leaderboardEntry = requestResult.data.scores[i];
-                        lines[i].highlighted = requestResult.data.scores[i].id == scoreId;
+                        LeaderboardEntry entry = new LeaderboardEntry();
+                        entry.id = scoresArrayJson[i]["id"].AsInt;
+                        entry.rank = scoresArrayJson[i]["rank"].AsInt;
+                        entry.score = scoresArrayJson[i]["score"].AsInt;
+                        entry.username = scoresArrayJson[i]["username"];
+                        if(scoresArrayJson[i]["is_new"])
+                            entry.type = LeaderboardEntryType.CurrentScore;
+                        else
+                        {
+                            if(entry.id == scoreId)
+                                entry.type = LeaderboardEntryType.BestPlayerScore;
+                            else
+                                entry.type = LeaderboardEntryType.Basic;
+                        } 
+                        lines[i].leaderboardEntry = entry;
                     }
-                    pageCount = requestResult.data.pageCount;
+                    for(int i=Mathf.Min(lines.Length, scoresArrayJson.Count); i<lines.Length; i++)
+                    {
+                        LeaderboardEntry entry = new LeaderboardEntry();
+                        entry.type = LeaderboardEntryType.Disabled;
+                        lines[i].leaderboardEntry = entry;
+                    }
+                    pageCount = root["data"]["pageCount"].AsInt;
                 }
                 else
                 {

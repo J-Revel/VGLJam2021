@@ -3,36 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum LeaderboardEntryType
+{
+    Disabled,
+    Basic,
+    BestPlayerScore,
+    CurrentScore
+}
 public class LeaderboardLine : MonoBehaviour
 {
+    public int index;
+    public System.Action dataChangedDelegate;
+    private LeaderboardEntry _leaderboardEntry;
     public LeaderboardEntry leaderboardEntry { 
         set {
-            backgroundImage.color = backgroundColors[index % backgroundColors.Length];
-            usernameText.text = value.username;
-            rankText.text = value.rank.ToString();
-            scoreText.text = value.score.ToString();
+            _leaderboardEntry = value;
+            dataChangedDelegate?.Invoke();
         }
-    }
-
-    public bool highlighted {
-        set {
-            highlightElement.SetActive(value);
+        get {
+            return _leaderboardEntry;
         }
     }
 
     public void Clear()
     {
-        usernameText.text = "";
-        rankText.text = "";
-        scoreText.text = "";
-        backgroundImage.color = new Color(0, 0, 0, 0);
+        _leaderboardEntry.type = LeaderboardEntryType.Disabled;
+        dataChangedDelegate?.Invoke();
     }
-
-    public int index;
-    public TMPro.TextMeshProUGUI usernameText;
-    public TMPro.TextMeshProUGUI rankText;
-    public TMPro.TextMeshProUGUI scoreText;
-    public Color[] backgroundColors;
-    public Image backgroundImage;
-    public GameObject highlightElement;
 }
