@@ -67,53 +67,18 @@ public class LeaderboardMenu : MonoBehaviour
             lines[i].Clear();
         int scoreId = PlayerPrefs.GetInt("scoreId", -1);
         WWWForm form = new WWWForm();
-        form.AddField("pageIndex", 0);
-        form.AddField("pageSize", pageSize);
-        form.AddField("tempId", scoreId);
-        form.AddField("tempScore", tempScore);
-        form.AddField("tempUsername", tempUsername);
-        form.AddField("project", EncryptionService.projectId);
-        UnityWebRequest webRequest = UnityWebRequest.Post("https://webservice.guilloteam.fr/score/" + (showTop ? "page/" : "around/"),  form);
+        UnityWebRequest webRequest = LeaderboardUtility.GetLeaderboardRequest(EncryptionService.projectId, showTop, pageSize, scoreId, tempScore, tempUsername);
         yield return webRequest.SendWebRequest();
         loadingScreen.SetActive(false);
         switch (webRequest.result)
         {
             case UnityWebRequest.Result.Success:
                 JSONNode root = JSON.Parse(webRequest.downloadHandler.text);
-                if(root["success"].AsBool)
+                LeaderboardEntry[] entries = LeaderboardUtility.ParseLeaderboardQueryResult(root);
+                for(int i=0; i<lines.Length; i++)
                 {
-                    JSONArray scoresArrayJson = root["data"]["scores"].AsArray;
-                    for(int i=0; i<Mathf.Min(lines.Length, scoresArrayJson.Count); i++)
-                    {
-                        LeaderboardEntry entry = new LeaderboardEntry();
-                        entry.id = scoresArrayJson[i]["id"].AsInt;
-                        entry.rank = scoresArrayJson[i]["rank"].AsInt;
-                        entry.score = scoresArrayJson[i]["score"].AsInt;
-                        entry.username = scoresArrayJson[i]["username"];
-                        if(scoresArrayJson[i]["is_new"])
-                            entry.type = LeaderboardEntryType.CurrentScore;
-                        else
-                        {
-                            if(entry.id == scoreId)
-                                entry.type = LeaderboardEntryType.BestPlayerScore;
-                            else
-                                entry.type = LeaderboardEntryType.Basic;
-                        } 
-                        lines[i].leaderboardEntry = entry;
-                    }
-                    for(int i=Mathf.Min(lines.Length, scoresArrayJson.Count); i<lines.Length; i++)
-                    {
-                        LeaderboardEntry entry = new LeaderboardEntry();
-                        entry.type = LeaderboardEntryType.Disabled;
-                        lines[i].leaderboardEntry = entry;
-                    }
-                    pageCount = root["data"]["pageCount"].AsInt;
+                    lines[i].leaderboardEntry = entries[i];
                 }
-                else
-                {
-                    Debug.LogError("Request Error : " + root["error"]);
-                }
-                
                 break;
             default:
                 Debug.Log("Error: " + webRequest.error);

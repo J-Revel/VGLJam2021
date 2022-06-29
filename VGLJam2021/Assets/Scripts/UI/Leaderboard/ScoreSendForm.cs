@@ -55,12 +55,11 @@ public class ScoreSendForm : MonoBehaviour
                 SimpleJSON.JSONNode rootNode = SimpleJSON.JSON.Parse(webRequest.downloadHandler.text);
                 int rank = rootNode["data"]["rank"];
                 int id = rootNode["data"]["id"];
-                if(scoreId >= 0)
-                {
-                    PlayerPrefs.SetInt("scoreId", id);
-                    PlayerPrefs.SetString("username", username);
-                }
+                
+                PlayerPrefs.SetInt("scoreId", id);
+                PlayerPrefs.SetString("username", username);
                 PlayerPrefs.Save();
+                
                 MenuSpawner.instance.CloseMenu();
                 LeaderboardMenu spawnedMenu = MenuSpawner.instance.SpawnMenu(leaderboardMenuPrefab.gameObject).GetComponent<LeaderboardMenu>();
                 spawnedMenu.pageIndex = rank / spawnedMenu.pageSize;
